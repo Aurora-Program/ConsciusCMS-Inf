@@ -228,3 +228,100 @@ Para soporte técnico o preguntas:
 ---
 
 **ConciusCMS** - Construido con ❤️ usando AWS Serverless Technologies
+ ------
+
+ ✨ Philosophy
+
+Freedom: open and scalable architecture, accessible to all.
+
+Truth: safeguards and validations that prioritize quality over noise.
+
+Purpose: every piece of content should contribute positively to individuals, communities, and the planet.
+
+Open Source, Open Spirit: knowledge and creation are not locked away, they are shared.
+
+🏗️ Architecture
+
+ConciusCMS is built on a serverless, Infrastructure as Code (IaC) foundation:
+
+S3 Buckets: public frontend, admin console, and content storage.
+
+CloudFront: fast and secure content delivery with origin access control.
+
+Cognito: user authentication (Admins / Editors).
+
+API Gateway: REST endpoints for managing content.
+
+Lambda (Node.js 20.x): serverless microservices interacting with DynamoDB.
+
+DynamoDB: database for pages, schemas, settings, and login audits.
+
+IAM: security enforced by least-privilege policies.
+
+A single CloudFormation template (mainTemplate.yml) can deploy the entire infrastructure in minutes.
+
+⚡ Quick Deployment
+
+Clone this repository.
+
+First deploy accountfactory.yaml to set up the base account environment.
+
+Then deploy mainTemplate.yml via AWS CloudFormation.
+
+Configure your environment variables and credentials.
+
+In less than 20 minutes you will have a professional, secure, and scalable CMS instance.
+
+🖋️ Application
+
+Schemas: define data structures visually.
+
+Content: create, edit, and publish with automatic validations.
+
+Multifield: nested blocks for fractal and flexible layouts.
+
+Editorial workflows: draft → review → publish.
+
+Ethical filters & validations: built-in AI to enhance quality and truth.
+
+Headless Frontend (React): clean separation of data and presentation for maximum design freedom.
+
+🔄 CI/CD
+
+GitHub Actions automates QA and production deployments.
+
+A simple commit and merge pushes changes to production in less than one minute.
+
+Identical QA and production stacks ensure maximum consistency.
+
+📦 Ready-to-Use Templates
+
+Landing + Sections (marketing, SaaS, courses).
+
+Docs / Knowledge Base.
+
+Blog / Magazine.
+
+Basic Catalog / E-commerce.
+
+Portfolio / Institutional.
+
+All based on composable schemas with multifield blocks.
+
+📜 License
+
+ConciusCMS is part of the Aurora Program, under dual license:
+
+Apache 2.0 (code).
+
+CC BY 4.0 (content & documentation).
+
+👉 Note: any modification that removes references to the sustainability of information philosophy must also remove references to ConciusCMS.
+
+🤝 Community
+
+Explore and deploy your own instance.
+
+Contribute templates, schemas, and improvements.
+
+Adopt the philosophy: treat content not as noise, but as a force for truth and harmony.
