@@ -325,3 +325,13 @@ Explore and deploy your own instance.
 Contribute templates, schemas, and improvements.
 
 Adopt the philosophy: treat content not as noise, but as a force for truth and harmony.
+
+## 📚 Informational Sustainability / Sostenibilidad Informacional
+
+- English: For more information about informational sustainability and its role in the age of electronic intelligence, see:
+
+  https://www.auroraprogram.org/article/Informational%20Sustainability:%20A%20Fundamental%20Principle%20for%20the%20Age%20of%20Electronic%20Intelligence
+
+- Español: Para más información sobre la sostenibilidad informacional y su papel en la era de la inteligencia electrónica, consulte:
+
+  https://www.auroraprogram.org/article/Informational%20Sustainability:%20A%20Fundamental%20Principle%20for%20the%20Age%20of%20Electronic%20Intelligence
