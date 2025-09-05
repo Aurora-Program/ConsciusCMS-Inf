@@ -1,9 +1,13 @@
 
-# ConciusCMS - Infrastructure as Code
+# ConsciusCMS - Infrastructure as Code
 
 ## 📋 Descripción
 
+<<<<<<< HEAD
 **ConciusCMS** es un sistema de gestión de contenidos (CMS) serverless construido completamente en AWS usando infraestructura como código (IaC). Proporciona una solución escalable, segura y moderna para la gestión de contenido web con capacidades headless. Ademas el sistema tiene mecanismo para favorecer el la calidad de contenido en intennet a largo plazo
+=======
+**ConsciusCMS** es un sistema de gestión de contenidos (CMS) serverless construido completamente en AWS usando infraestructura como código (IaC). Proporciona una solución escalable, segura y moderna para la gestión de contenido web con capacidades headless.
+>>>>>>> c08fa4da332fa7693128144eb0c044ea901914b4
 
 ## 🏗️ Arquitectura
 
@@ -227,6 +231,7 @@ Para soporte técnico o preguntas:
 
 ---
 
+<<<<<<< HEAD
 **ConciusCMS** - Construido con ❤️ usando AWS Serverless Technologies
  ------
 
@@ -325,3 +330,6 @@ Explore and deploy your own instance.
 Contribute templates, schemas, and improvements.
 
 Adopt the philosophy: treat content not as noise, but as a force for truth and harmony.
+=======
+**ConsciusCMS** - Construido con ❤️ usando AWS Serverless Technologies
+>>>>>>> c08fa4da332fa7693128144eb0c044ea901914b4

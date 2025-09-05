@@ -28,7 +28,7 @@ jobs:
           npm ci
           npm run build
 
-      - name: Configure AWS Credentials
+      - name: Configure AWS Credentials for CMS
         uses: aws-actions/configure-aws-credentials@v3
         with:
           aws-access-key-id: ${{ secrets.ACCESS_KEY_ID_CM }}
@@ -38,12 +38,10 @@ jobs:
       - name: Sync CMS interface to S3
         run: |
           # cmsInterface vite.config.ts outputs to ./dist/admin per repo config
-          aws s3 sync ./cmsInterface/dist/admin s3://${{ vars.CODECM_BUCKET }} --delete
-            run: |
-          if [ -d "./dist/admin" ]; then
-            aws s3 sync ./cmsInterface/dist/admin s3://${{ vars.CODCM_BUCKET }}/admin --delete
+          if [ -d "cmsInterface/dist/admin" ]; then
+            aws s3 sync cmsInterface/dist/admin s3://${{ vars.CODECM_BUCKET }}/admin --delete
           else
-            echo "No admin folder found, skipping."
+            echo "No cmsInterface/dist/admin folder found, skipping CMS sync."
           fi
 
       - name: Configure AWS Credentials
@@ -56,6 +54,4 @@ jobs:
       - name: Sync frontend to S3
         run: |
           aws s3 sync ./frontend/dist s3://${{ vars.FRONTEND_BUCKET }} --delete
-
-                - name: Sync admin to S3 (if exists)
       
