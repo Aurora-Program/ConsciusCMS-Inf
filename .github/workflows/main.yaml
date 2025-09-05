@@ -53,5 +53,13 @@ jobs:
 
       - name: Sync frontend to S3
         run: |
-          aws s3 sync ./frontend/dist s3://${{ vars.FRONTEND_BUCKET }} --delete
+          set -xe
+          echo "Listing frontend/dist contents"
+          ls -la ./frontend/dist || true
+          echo "Running aws s3 sync"
+          aws s3 sync ./frontend/dist s3://${{ vars.FRONTEND_BUCKET }} --delete || {
+            echo "aws s3 sync failed with exit code $? - retrying with --debug to capture details"
+            aws s3 sync ./frontend/dist s3://${{ vars.FRONTEND_BUCKET }} --delete --debug
+            exit 1
+          }
       
