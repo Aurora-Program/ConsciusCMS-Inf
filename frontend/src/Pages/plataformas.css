@@ -1,0 +1,506 @@
+/* Plataformas Page Styles */
+
+.plataformas-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--aurora-bg-subtle) 100%);
+}
+
+/* Hero Section */
+.plataformas-hero {
+  padding: 6rem 0 4rem;
+  background: linear-gradient(135deg, var(--aurora-gradient-start) 0%, var(--aurora-gradient-mid) 50%, var(--aurora-gradient-end) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.plataformas-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-content {
+  text-align: center;
+  color: #1f2937;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: black;
+
+}
+
+.hero-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Platforms Section */
+.platforms-section {
+  padding: 5rem 0;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.platform-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.platform-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transition: all 0.3s ease;
+}
+
+.ethics-card::before {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.innovation-card::before {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.community-card::before {
+  background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+}
+
+.platform-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.platform-card:hover::before {
+  height: 8px;
+}
+
+.platform-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.ethics-card .platform-icon {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.innovation-card .platform-icon {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.community-card .platform-icon {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.platform-card:hover .platform-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.platform-content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.platform-tagline {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.platform-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.platform-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-tag {
+  background: rgba(59, 130, 246, 0.1);
+  color: #2563eb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.platform-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.platform-cta:hover {
+  color: #2563eb;
+  transform: translateX(5px);
+}
+
+/* Synergy Section */
+.synergy-section {
+  padding: 5rem 0;
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.synergy-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.synergy-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.synergy-intro {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.synergy-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.step-content h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.step-content p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.flow-arrow {
+  color: #2563eb;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+/* Impact Section */
+.impact-section {
+  padding: 5rem 0;
+}
+
+.impact-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.impact-section p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #4b5563;
+}
+
+.impact-list i {
+  color: #10b981;
+  font-size: 1.2rem;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  background:;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color:black;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary {
+  border: 2px solid white;
+  color: #ffffff;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: white;
+  color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .platforms-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .platform-card {
+    padding: 2rem;
+  }
+  
+  .synergy-flow {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+  
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* CTA Section - Force white text */
+.plataformas-page .cta-content h2,
+.plataformas-page .cta-content p,
+.cta-title-force-white,
+.cta-text-force-white {
+  color: #ffffff !important;
+}
+
+.cta-title-force-white {
+  color: #ffffff !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+}
+
+.cta-text-force-white {
+  color: #ffffff !important;
+  font-size: 1.2rem !important;
+  margin-bottom: 2rem !important;
+  opacity: 0.9 !important;
+}
+
+/* FORCE TEXT VISIBILITY - HIGHEST SPECIFICITY */
+.plataformas-page .platform-description,
+.plataformas-page .platform-tagline,
+.plataformas-page .platform-content h3,
+.plataformas-page .synergy-intro,
+.plataformas-page .synergy-content h2,
+.plataformas-page .step-content h4,
+.plataformas-page .step-content p,
+.plataformas-page .impact-section h2,
+.plataformas-page .impact-section p,
+.plataformas-page .impact-list li,
+.plataformas-page .stat-label {
+  color: #1f2937 !important;
+}
+
+.plataformas-page .platform-description {
+  color: #6b7280 !important;
+}
+
+.plataformas-page .platform-tagline {
+  color: #9ca3af !important;
+}
+
+.plataformas-page .synergy-intro,
+.plataformas-page .impact-section p {
+  color: #4b5563 !important;
+}
+
+.plataformas-page .step-content p,
+.plataformas-page .impact-list li,
+.plataformas-page .stat-label {
+  color: #6b7280 !important;
+}
+
+/* CTA Section - Force white text */
+.plataformas-page .cta-content h2,
+.plataformas-page .cta-content p {
+  color: #ffffff !important;
+}
+
+/* ABSOLUTE FORCE WHITE TEXT IN CTA */
+div.plataformas-page section.cta-section div.cta-content h2.cta-title-force-white {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+div.plataformas-page section.cta-section div.cta-content p.cta-text-force-white {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* Override any global styles */
+.cta-section * {
+  color: inherit !important;
+}
+
+.cta-section {
+  color: #ffffff !important;
+}

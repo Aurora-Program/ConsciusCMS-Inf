@@ -1,0 +1,444 @@
+/* Import Design System Variables */
+@import url('./styles/variables.css');
+@import url('./styles/standardLayout.css');
+@import url('./styles/schemaEditor.css');
+@import url('./components/ModernButtons.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-400) var(--color-gray-100);
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+  overflow-x: hidden;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, var(--bg-main) 0%, var(--color-gray-50) 100%);
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-500);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--color-gray-600);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--text-inverse);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-inverse { color: var(--text-inverse); }
+
+.bg-surface { background-color: var(--bg-surface); }
+.bg-primary { background-color: var(--color-primary); }
+
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
+
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-xl { border-radius: var(--radius-xl); }
+
+/* Animation Utilities */
+.fade-in {
+  animation: fadeIn var(--transition-normal) ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp var(--transition-normal) ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modern Button Styles */
+.btn-modern {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.5;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn-modern:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-modern:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: var(--text-inverse);
+  border: 1px solid rgba(255, 140, 0, 0.3);
+  box-shadow: 
+    var(--shadow-sm),
+    0 0 10px rgba(255, 140, 0, 0.12);
+}
+
+.btn-primary:hover {
+  background: var(--gradient-aurora);
+  color: var(--text-inverse);
+  filter: brightness(1.08);
+  border-color: rgba(255, 140, 0, 0.5);
+  box-shadow: 
+    var(--shadow-md),
+    0 0 15px rgba(255, 140, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Modern Card Styles */
+.card-modern {
+  background: var(--bg-surface);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  overflow: hidden;
+}
+
+.card-modern:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Glass Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-gray-200);
+  border-top: 2px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  :root {
+    --main-padding: 1rem;
+    --sidebar-width: 100%;
+  }
+}
+
+/* Override Bootstrap and ensure proper centering */
+.mainContentDiv {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--main-padding) !important;
+  padding-right: var(--main-padding) !important;
+  text-align: left !important;
+}
+
+/* Ensure dashboard content is properly aligned */
+.dashboard-container {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Modern Footer */
+.modern-footer {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--color-gray-200);
+  padding: var(--space-sm) 0; /* Reduced padding to minimize gap */
+  margin-top: 0; /* Removed auto margin to eliminate gap */
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-md);
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer-version {
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+  
+  .footer-links {
+    order: 2;
+  }
+  
+  .footer-brand {
+    order: 1;
+  }
+  
+  .footer-social {
+    order: 3;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Professional Buttons and Modern UI Elements */
+
+/* Modern Add Button - Elegant with Soft Gradients */
+.modern-add-btn {
+  background:  var(--gradient-primary)  !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.025em !important;
+  box-shadow: 0 3px 8px rgba(102, 126, 234, 0.15) !important;
+  transition: all 0.3s ease !important;
+  color: white !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+.modern-add-btn:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.25) !important;
+  background:  var(--gradient-primary)  !important;
+  color: white !important;
+}
+
+.modern-add-btn:active {
+  transform: translateY(0px) !important;
+}
+
+.modern-add-btn:disabled {
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%) !important;
+  color: #a0aec0 !important;
+  transform: none !important;
+  box-shadow: 0 2px 4px rgba(160, 174, 192, 0.1) !important;
+  cursor: not-allowed !important;
+}
+
+.modern-add-btn i {
+  font-size: 0.9em;
+  margin-right: 0.4rem;
+}
+
+/* Fix for button container overflow */
+.schemaAreaTemplatesDiv .stack,
+.schemaAreaFieldsDiv .stack {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+.schemaAreaTemplatesDiv h4,
+.schemaAreaFieldsDiv h4 {
+  flex: 1 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Modern Table Headers - Elegant Style */
+.editorListTableHead {
+  font-weight: 600 !important;
+  color: #2d3748 !important;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%) !important;
+  text-transform: uppercase !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.05em !important;
+  padding: 0.75rem 1rem !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.editorListTableHead i {
+  color: #6b7280 !important;
+  margin-right: 0.3rem !important;
+  font-size: 0.8em !important;
+}
+
+/* Modern Section Headers - Unified Icons */
+h4 i {
+  color: #6b7280 !important;
+  margin-right: 0.25rem !important;
+  font-size: 0.85em !important;
+}
+
+/* Unified Icon Colors in Schema sections */
+.schemaAreaTemplatesDiv i:not(.modern-add-btn i),
+.schemaAreaFieldsDiv i:not(.modern-add-btn i),
+.schemaAreaDetails i:not(.modern-add-btn i) {
+  color: #6b7280 !important;
+}
+
+/* Keep button icons with proper contrast */
+.modern-add-btn i {
+  color: white !important;
+  font-size: 0.8em;
+  margin-right: 0.3rem;
+}

@@ -1,0 +1,770 @@
+/* ===================================
+   AURORA DESIGN SYSTEM - COMPONENTES ESTANDARIZADOS
+   ===================================
+   
+   Este archivo define todos los componentes estándar con estilos
+   consistentes que se pueden aplicar a través de toda la aplicación.
+   Cada componente tiene comentarios que explican su uso.
+*/
+
+/* ===================================
+   VARIABLES GLOBALES AURORA
+   =================================== */
+:root {
+  /* Colores Primarios Aurora */
+  --aurora-primary-dark: #1e4a7a;
+  --aurora-primary-main: #2563eb;
+  --aurora-primary-light: #1e3a5f;
+  
+  /* Colores Dorados Aurora */
+  --aurora-gold-light: #FFFACD;
+  --aurora-gold-main: #F0E68C;
+  --aurora-gold-dark: #DEB887;
+  --aurora-gold-accent: #CD853F;
+  
+  /* Colores de Superficie */
+  --aurora-surface-white: #ffffff;
+  --aurora-surface-light: #f8f9fa;
+  --aurora-surface-gray: #e5e7eb;
+  
+  /* Gradientes Estándar */
+  --aurora-gradient-primary: linear-gradient(135deg, var(--aurora-primary-dark) 0%, var(--aurora-primary-main) 50%, var(--aurora-primary-light) 100%);
+  --aurora-gradient-gold: linear-gradient(135deg, var(--aurora-gold-light) 0%, var(--aurora-gold-main) 50%, var(--aurora-gold-dark) 100%);
+  
+  /* Espaciado Estándar */
+  --aurora-spacing-xs: 0.5rem;
+  --aurora-spacing-sm: 1rem;
+  --aurora-spacing-md: 1.5rem;
+  --aurora-spacing-lg: 2rem;
+  --aurora-spacing-xl: 3rem;
+  
+  /* Bordes y Radios */
+  --aurora-radius-sm: 8px;
+  --aurora-radius-md: 12px;
+  --aurora-radius-lg: 16px;
+  --aurora-radius-xl: 20px;
+  
+  /* Sombras */
+  --aurora-shadow-sm: 0 2px 8px rgba(30, 74, 122, 0.1);
+  --aurora-shadow-md: 0 4px 16px rgba(30, 74, 122, 0.15);
+  --aurora-shadow-lg: 0 8px 25px rgba(30, 74, 122, 0.2);
+}
+
+/* ===================================
+   COMPONENTE: CONTENEDORES
+   =================================== */
+
+/* Contenedor Principal - Para secciones de página completa */
+.aurora-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--aurora-spacing-md);
+}
+
+/* Sección Hero - Para encabezados principales */
+.aurora-hero {
+  background: var(--aurora-gradient-primary);
+  color: white;
+  padding: var(--aurora-spacing-xl) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.aurora-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(255, 248, 220, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(240, 230, 140, 0.08) 0%, transparent 50%);
+  animation: aurora-float 20s infinite linear;
+}
+
+/* Sección de Contenido - Para bloques de contenido general */
+.aurora-section {
+  padding: var(--aurora-spacing-xl) 0;
+  background: var(--aurora-surface-white);
+}
+
+.aurora-section.alt {
+  background: var(--aurora-surface-light);
+}
+
+/* ===================================
+   COMPONENTE: TARJETAS
+   =================================== */
+
+/* Tarjeta Base - Componente de tarjeta estándar */
+.aurora-card {
+  background: var(--aurora-surface-white);
+  border-radius: var(--aurora-radius-lg);
+  padding: var(--aurora-spacing-lg);
+  box-shadow: var(--aurora-shadow-md);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(30, 74, 122, 0.1);
+}
+
+.aurora-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--aurora-shadow-lg);
+}
+
+/* Tarjeta con Acento Dorado */
+.aurora-card.gold-accent {
+  border-left: 4px solid var(--aurora-gold-main);
+}
+
+/* Tarjeta con Acento Azul */
+.aurora-card.blue-accent {
+  border-left: 4px solid var(--aurora-primary-main);
+}
+
+/* Tarjeta de Feature - Para características destacadas */
+.aurora-feature-card {
+  text-align: center;
+  padding: var(--aurora-spacing-xl);
+  background: var(--aurora-surface-white);
+  border-radius: var(--aurora-radius-xl);
+  box-shadow: var(--aurora-shadow-md);
+  transition: all 0.3s ease;
+}
+
+.aurora-feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--aurora-shadow-lg);
+}
+
+.aurora-feature-card .icon {
+  font-size: 3rem;
+  color: var(--aurora-primary-main);
+  margin-bottom: var(--aurora-spacing-md);
+  display: block;
+}
+
+.aurora-feature-card.gold .icon {
+  color: var(--aurora-gold-dark);
+}
+
+/* ===================================
+   COMPONENTE: TIPOGRAFÍA ESTANDARIZADA
+   =================================== */
+
+/* HERO TITLES - Títulos principales consistentes */
+.aurora-hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--aurora-spacing-lg);
+  color: white;
+  
+  /* Gradiente Aurora Brand */
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 1) 0%,
+    var(--aurora-gold-light) 30%,
+    var(--aurora-gold-main) 60%,
+    var(--aurora-gold-dark) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Sombra elegante */
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(240, 230, 140, 0.2),
+    0 0 40px rgba(222, 184, 135, 0.1);
+}
+
+/* Para páginas con fondo claro */
+.aurora-hero-title.dark-version {
+  color: var(--aurora-primary-dark);
+  background: linear-gradient(135deg, 
+    var(--aurora-primary-dark) 0%,
+    var(--aurora-primary-main) 50%,
+    var(--aurora-gold-dark) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 8px rgba(30, 74, 122, 0.2);
+}
+
+/* SECTION TITLES - Títulos de sección */
+.aurora-section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--aurora-spacing-xl);
+  color: var(--aurora-primary-dark);
+  text-align: center;
+}
+
+/* SUBSECTION TITLES - Subtítulos de sección */
+.aurora-subsection-title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: var(--aurora-spacing-lg);
+  color: var(--aurora-primary-main);
+}
+
+/* CARD TITLES - Títulos de tarjetas */
+.aurora-card-title {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: var(--aurora-spacing-md);
+  color: var(--aurora-primary-dark);
+}
+
+/* HERO SUBTITLES - Subtítulos hero consistentes */
+.aurora-hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--aurora-spacing-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aurora-hero-subtitle.dark-version {
+  color: rgba(30, 74, 122, 0.8);
+}
+
+/* GRADIENT TEXT UTILITIES */
+.aurora-gradient-text {
+  background: var(--aurora-gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Compatibilidad con clases existentes */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--aurora-spacing-lg);
+  color: white;
+  
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 1) 0%,
+    var(--aurora-gold-light) 30%,
+    var(--aurora-gold-main) 60%,
+    var(--aurora-gold-dark) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(240, 230, 140, 0.2),
+    0 0 40px rgba(222, 184, 135, 0.1);
+}
+
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--aurora-spacing-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gradient-text {
+  background: var(--aurora-gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Título Principal - Para h1 importantes (LEGACY - Mantener por compatibilidad) */
+.aurora-title-main {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: var(--aurora-spacing-md);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.aurora-title-main.dark {
+  color: var(--aurora-primary-main);
+  text-shadow: none;
+}
+
+/* Título de Sección - Para h2 de secciones (LEGACY - Mantener por compatibilidad) */
+.aurora-title-section {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--aurora-primary-main);
+  margin-bottom: var(--aurora-spacing-lg);
+  text-align: center;
+}
+
+/* Texto con Gradiente Dorado (LEGACY - Mantener por compatibilidad) */
+.aurora-text-gold {
+  background: var(--aurora-gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* Subtítulo (LEGACY - Mantener por compatibilidad) */
+.aurora-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--aurora-spacing-lg);
+  line-height: 1.6;
+}
+
+.aurora-subtitle.dark {
+  color: #666;
+}
+
+/* ===================================
+   COMPONENTE: BOTONES
+   =================================== */
+
+/* Botón Base Aurora */
+.aurora-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--aurora-spacing-xs);
+  padding: var(--aurora-spacing-md) var(--aurora-spacing-lg);
+  border-radius: var(--aurora-radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Botón Primario */
+.aurora-btn.primary {
+  background: var(--aurora-gradient-primary);
+  color: white;
+}
+
+.aurora-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--aurora-shadow-lg);
+}
+
+/* Botón Dorado */
+.aurora-btn.gold {
+  background: var(--aurora-gradient-gold);
+  color: var(--aurora-primary-dark);
+}
+
+.aurora-btn.gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(240, 230, 140, 0.4);
+}
+
+/* Botón Outline */
+.aurora-btn.outline {
+  background: transparent;
+  border: 2px solid var(--aurora-primary-main);
+  color: var(--aurora-primary-main);
+}
+
+.aurora-btn.outline:hover {
+  background: var(--aurora-primary-main);
+  color: white;
+}
+
+/* ===================================
+   COMPONENTE: GRIDS Y LAYOUTS
+   =================================== */
+
+/* Grid de 2 Columnas */
+.aurora-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--aurora-spacing-lg);
+}
+
+/* Grid de 3 Columnas */
+.aurora-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--aurora-spacing-lg);
+}
+
+/* Grid de 4 Columnas */
+.aurora-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--aurora-spacing-md);
+}
+
+/* Flex Row Centrado */
+.aurora-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aurora-spacing-md);
+}
+
+/* ===================================
+   SISTEMA DE BACKGROUNDS ESTANDARIZADO
+   =================================== */
+
+/* HERO BACKGROUNDS - Fondos para secciones hero */
+
+/* Hero primario con gradiente Aurora clásico */
+.aurora-bg-hero-primary {
+  background: linear-gradient(135deg, 
+    var(--aurora-primary-dark) 0%, 
+    var(--aurora-primary-main) 50%, 
+    var(--aurora-primary-light) 100%
+  );
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero con efecto atmosférico complejo (como home) */
+.aurora-bg-hero-atmospheric {
+  background: 
+    /* Aurora atmosphere */
+    radial-gradient(ellipse at center bottom, 
+      rgba(255, 140, 0, 0.8) 0%,
+      rgba(255, 100, 0, 0.6) 20%,
+      rgba(255, 69, 0, 0.4) 40%,
+      var(--aurora-primary-dark) 70%,
+      rgba(15, 37, 61, 0.95) 100%
+    ),
+    /* Sun glow */
+    radial-gradient(circle at 50% 85%, 
+      rgba(255, 255, 255, 0.9) 0%,
+      var(--aurora-gold-light) 5%,
+      var(--aurora-gold-main) 15%,
+      transparent 25%
+    );
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero minimalista con gradiente sutil */
+.aurora-bg-hero-minimal {
+  background: linear-gradient(135deg, 
+    var(--aurora-primary-main) 0%, 
+    var(--aurora-secondary) 100%
+  );
+  color: white;
+  position: relative;
+}
+
+/* SECTION BACKGROUNDS - Fondos para secciones de contenido */
+
+/* Fondo blanco limpio */
+.aurora-bg-clean {
+  background: var(--aurora-surface-white);
+  color: var(--aurora-gray-800);
+}
+
+/* Fondo gris claro alternativo */
+.aurora-bg-subtle {
+  background: var(--aurora-surface-light);
+  color: var(--aurora-gray-800);
+}
+
+/* Fondo con gradiente suave */
+.aurora-bg-gradient-subtle {
+  background: linear-gradient(135deg, 
+    var(--aurora-surface-white) 0%, 
+    var(--aurora-surface-light) 100%
+  );
+  color: var(--aurora-gray-800);
+}
+
+/* CARD BACKGROUNDS - Fondos para tarjetas y componentes */
+
+/* Fondo de vidrio (glassmorphism) ligero */
+.aurora-bg-glass-light {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--aurora-radius-lg);
+}
+
+/* Fondo de vidrio medio */
+.aurora-bg-glass-medium {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--aurora-radius-lg);
+}
+
+/* Fondo de vidrio fuerte */
+.aurora-bg-glass-strong {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--aurora-radius-lg);
+}
+
+/* Fondo de tarjeta estándar */
+.aurora-bg-card {
+  background: var(--aurora-surface-white);
+  border-radius: var(--aurora-radius-lg);
+  box-shadow: var(--aurora-shadow-md);
+  border: 1px solid rgba(30, 74, 122, 0.1);
+}
+
+/* Fondo de tarjeta con acento dorado */
+.aurora-bg-card-gold {
+  background: 
+    linear-gradient(135deg, 
+      rgba(255, 248, 220, 0.1) 0%, 
+      rgba(240, 230, 140, 0.05) 100%
+    ),
+    var(--aurora-surface-white);
+  border-radius: var(--aurora-radius-lg);
+  box-shadow: var(--aurora-shadow-md);
+  border-left: 4px solid var(--aurora-gold-main);
+}
+
+/* Fondo de tarjeta con acento azul */
+.aurora-bg-card-blue {
+  background: 
+    linear-gradient(135deg, 
+      rgba(30, 74, 122, 0.05) 0%, 
+      rgba(37, 99, 235, 0.03) 100%
+    ),
+    var(--aurora-surface-white);
+  border-radius: var(--aurora-radius-lg);
+  box-shadow: var(--aurora-shadow-md);
+  border-left: 4px solid var(--aurora-primary-main);
+}
+
+/* OVERLAY PATTERNS - Patrones de superposición para heroes */
+
+/* Overlay con efecto de partículas */
+.aurora-bg-hero-primary::before,
+.aurora-bg-hero-minimal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 165, 0, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  animation: aurora-float 20s infinite linear;
+}
+
+/* UTILITY BACKGROUNDS - Utilidades rápidas */
+
+/* Transparente */
+.aurora-bg-transparent {
+  background: transparent;
+}
+
+/* Fondo con gradiente dorado */
+.aurora-bg-gold-gradient {
+  background: var(--aurora-gradient-gold);
+  color: white;
+}
+
+/* Fondo azul sólido */
+.aurora-bg-primary {
+  background: var(--aurora-primary-main);
+  color: white;
+}
+
+/* Fondo dorado sólido */
+.aurora-bg-gold {
+  background: var(--aurora-gold-main);
+  color: var(--aurora-primary-dark);
+}
+
+/* ANIMACIONES PARA BACKGROUNDS */
+
+@keyframes aurora-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  33% {
+    transform: translateY(-10px) rotate(120deg);
+    opacity: 0.8;
+  }
+  66% {
+    transform: translateY(5px) rotate(240deg);
+    opacity: 0.9;
+  }
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .aurora-bg-hero-atmospheric,
+  .aurora-bg-hero-primary {
+    background-size: 150% 150%;
+  }
+  
+  .aurora-bg-glass-light,
+  .aurora-bg-glass-medium,
+  .aurora-bg-glass-strong {
+    backdrop-filter: blur(8px) saturate(150%);
+  }
+}
+
+/* Flex Between */
+.aurora-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--aurora-spacing-md);
+}
+
+/* ===================================
+   COMPONENTE: ELEMENTOS ESPECIALES
+   =================================== */
+
+/* Badge/Etiqueta */
+.aurora-badge {
+  display: inline-block;
+  padding: var(--aurora-spacing-xs) var(--aurora-spacing-sm);
+  background: var(--aurora-primary-main);
+  color: white;
+  border-radius: var(--aurora-radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.aurora-badge.gold {
+  background: var(--aurora-gold-dark);
+  color: white;
+}
+
+/* Divider/Separador */
+.aurora-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--aurora-gold-main) 50%, transparent 100%);
+  margin: var(--aurora-spacing-xl) 0;
+}
+
+/* Quote/Cita */
+.aurora-quote {
+  background: var(--aurora-surface-light);
+  border-left: 4px solid var(--aurora-gold-main);
+  padding: var(--aurora-spacing-lg);
+  border-radius: 0 var(--aurora-radius-md) var(--aurora-radius-md) 0;
+  font-style: italic;
+  position: relative;
+}
+
+.aurora-quote::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--aurora-gold-main);
+  position: absolute;
+  top: -10px;
+  left: var(--aurora-spacing-md);
+  line-height: 1;
+}
+
+/* ===================================
+   COMPONENTE: ESTADOS Y UTILIDADES
+   =================================== */
+
+/* Estado de Carga */
+.aurora-loading {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--aurora-surface-gray);
+  border-top: 4px solid var(--aurora-primary-main);
+  border-radius: 50%;
+  animation: aurora-spin 1s linear infinite;
+}
+
+@keyframes aurora-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Animación de Float */
+@keyframes aurora-float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-20px) rotate(360deg); }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+@media (max-width: 768px) {
+  .aurora-title-main {
+    font-size: 2rem;
+  }
+  
+  .aurora-title-section {
+    font-size: 1.75rem;
+  }
+  
+  .aurora-grid-2,
+  .aurora-grid-3,
+  .aurora-grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .aurora-flex-between {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .aurora-container {
+    padding: 0 var(--aurora-spacing-sm);
+  }
+}
+
+/* ===================================
+   COMPONENTE: ICONOS ESTÁNDAR
+   =================================== */
+
+/* Contenedor de Icono */
+.aurora-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--aurora-gradient-primary);
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: var(--aurora-spacing-md);
+}
+
+.aurora-icon.gold {
+  background: var(--aurora-gradient-gold);
+  color: var(--aurora-primary-dark);
+}
+
+.aurora-icon.large {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+}

@@ -1,0 +1,170 @@
+/* Modern Aurora Pagination Styles */
+
+/* Container for the pagination */
+.aurora-pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) 0;
+  margin: var(--space-xl) 0;
+}
+
+/* Override Bootstrap pagination styles */
+.aurora-pagination .pagination {
+  margin: 0;
+  gap: 4px;
+}
+
+.aurora-pagination .page-link {
+  border: 1px solid var(--color-gray-300) !important;
+  border-radius: var(--radius-md) !important;
+  color: var(--text-secondary) !important;
+  background-color: var(--bg-surface) !important;
+  padding: 8px 12px !important;
+  font-size: var(--font-size-sm) !important;
+  font-weight: 500 !important;
+  transition: all var(--transition-fast) !important;
+  min-width: 40px !important;
+  text-align: center !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.aurora-pagination .page-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+  transition: left var(--transition-normal);
+}
+
+.aurora-pagination .page-link:hover {
+  border-color: var(--color-primary) !important;
+  background-color: var(--color-primary-light) !important;
+  color: var(--color-primary) !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md) !important;
+}
+
+.aurora-pagination .page-link:hover::before {
+  left: 100%;
+}
+
+.aurora-pagination .page-link:focus {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25) !important;
+  border-color: var(--color-primary) !important;
+}
+
+/* Active page styling */
+.aurora-pagination .page-item.active .page-link {
+  background: var(--gradient-aurora) !important;
+  border-color: var(--aurora-orange) !important;
+  color: var(--text-inverse) !important;
+  font-weight: 600 !important;
+  box-shadow: 
+    var(--shadow-md),
+    0 0 20px rgba(255, 140, 0, 0.3) !important;
+  transform: scale(1.05);
+}
+
+/* Disabled state */
+.aurora-pagination .page-item.disabled .page-link {
+  background-color: var(--color-gray-100) !important;
+  border-color: var(--color-gray-200) !important;
+  color: var(--color-gray-400) !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+}
+
+.aurora-pagination .page-item.disabled .page-link:hover {
+  background-color: var(--color-gray-100) !important;
+  border-color: var(--color-gray-200) !important;
+  color: var(--color-gray-400) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Navigation buttons (First, Prev, Next, Last) */
+.aurora-pagination .page-item:first-child .page-link,
+.aurora-pagination .page-item:last-child .page-link,
+.aurora-pagination .page-item:nth-child(2) .page-link,
+.aurora-pagination .page-item:nth-last-child(2) .page-link {
+  font-weight: 600;
+  padding: 8px 16px !important;
+}
+
+/* Info text styling */
+.aurora-pagination-info {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  background: var(--bg-surface);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gray-200);
+  white-space: nowrap;
+}
+
+/* Quick jump input */
+.aurora-pagination-jump {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.aurora-pagination-jump input {
+  width: 50px;
+  padding: 4px 8px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+
+.aurora-pagination-jump input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .aurora-pagination-container {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .aurora-pagination .page-link {
+    padding: 6px 10px !important;
+    font-size: var(--font-size-xs) !important;
+    min-width: 35px !important;
+  }
+  
+  .aurora-pagination-info {
+    font-size: var(--font-size-xs);
+    padding: 6px 12px;
+  }
+  
+  /* Hide some items on mobile */
+  .aurora-pagination .page-item:first-child,
+  .aurora-pagination .page-item:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .aurora-pagination .pagination {
+    gap: 2px;
+  }
+  
+  .aurora-pagination .page-link {
+    padding: 4px 8px !important;
+    min-width: 30px !important;
+  }
+}

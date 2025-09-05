@@ -1,0 +1,43 @@
+// Aurora brand colors based on logo
+$primary: #1e4a7a; // Deep blue from logo
+$secondary: #64748b; // Slate gray
+$success: #10b981; // Emerald
+$info: #06b6d4; // Cyan
+$warning: #f59e0b; // Amber (matches sun in logo)
+$danger: #ef4444; // Red
+$light: #f8fafc; // Very light gray
+$dark: #1e293b; // Dark slate
+
+// Custom variables for Aurora theme based on logo
+$aurora-sun-primary: #ff8c00; // Main orange from sun
+$aurora-sun-light: #ffa500; // Lighter orange
+$aurora-sun-dark: #ff7700; // Darker orange
+$aurora-blue-primary: #1e4a7a; // Main blue from text
+$aurora-blue-light: #2563eb; // Lighter blue
+$aurora-blue-dark: #1e3a5f; // Darker blue
+
+// Updated gradient variables
+$aurora-gradient-start: #ff8c00; // Orange start
+$aurora-gradient-mid: #ffa500; // Orange middle
+$aurora-gradient-end: #1e4a7a; // Blue end
+$aurora-accent: #ffa500; // Orange accent
+$aurora-text-light: #64748b;
+$aurora-bg-subtle: #f8f9fa;
+
+// Bootstrap overrides
+$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+$border-radius: 0.75rem;
+$border-radius-sm: 0.5rem;
+$border-radius-lg: 1rem;
+
+$box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$box-shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$box-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+$btn-close-opacity: 1;
+$btn-close-hover-opacity: 0.8;
+
+@import 'bootstrap';

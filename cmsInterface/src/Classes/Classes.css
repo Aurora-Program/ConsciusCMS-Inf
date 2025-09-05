@@ -1,0 +1,29 @@
+.section{
+ 
+    padding-top:20px;
+    height: 72vh;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.sectionloading{
+ 
+    padding-top:20px;
+    height: 72vh;
+    overflow: hidden;
+    cursor: wait;
+    
+}
+
+.buttonSelectPage{
+   
+        background: none!important;
+        border: none;
+        padding: 0!important;
+        /*optional*/
+        font-family: arial, sans-serif;
+        /*input has OS specific font-family*/
+        color: rgb(198,94,26);
+        text-decoration: underline;
+        cursor: pointer;
+}

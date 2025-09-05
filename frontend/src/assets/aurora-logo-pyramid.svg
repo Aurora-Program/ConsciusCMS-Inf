@@ -1,0 +1,97 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definiciones de gradientes con colores más claros -->
+  <defs>
+    <!-- Fondo radial azul claro -->
+    <radialGradient id="logoBackground" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" style="stop-color:#B0E0E6"/>
+      <stop offset="50%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#4682B4"/>
+    </radialGradient>
+    
+    <!-- Gradiente de la pirámide dorada clara -->
+    <linearGradient id="logoPyramidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8DC"/>
+      <stop offset="30%" style="stop-color:#FFE4B5"/>
+      <stop offset="70%" style="stop-color:#DEB887"/>
+      <stop offset="100%" style="stop-color:#D2B48C"/>
+    </linearGradient>
+    
+    <!-- Gradiente de luz radiante -->
+    <radialGradient id="logoLightGradient" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" style="stop-color:#FFFACD"/>
+      <stop offset="30%" style="stop-color:#F0E68C"/>
+      <stop offset="60%" style="stop-color:#DDA0DD"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
+    
+    <!-- Gradiente para los rayos -->
+    <linearGradient id="logoRayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFACD"/>
+      <stop offset="50%" style="stop-color:#F0E68C"/>
+      <stop offset="100%" style="stop-color:#DDA0DD"/>
+    </linearGradient>
+    
+    <!-- Filtro de resplandor -->
+    <filter id="glow">
+      <feMorphology operator="dilate" radius="2"/>
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo con círculo -->
+  <circle cx="100" cy="100" r="95" fill="url(#logoBackground)" stroke="#4682B4" stroke-width="2"/>
+  
+  <!-- Aura de luz de fondo -->
+  <circle cx="100" cy="60" r="60" fill="url(#logoLightGradient)" opacity="0.6"/>
+  
+  <!-- Pirámide principal -->
+  <polygon points="100,40 50,140 150,140" fill="url(#logoPyramidGradient)" stroke="#B8860B" stroke-width="2"/>
+  
+  <!-- Línea central de la pirámide -->
+  <line x1="100" y1="40" x2="100" y2="140" stroke="#8B7355" stroke-width="1.5"/>
+  
+  <!-- Lado izquierdo más oscuro para dar profundidad -->
+  <polygon points="100,40 50,140 100,140" fill="rgba(139,115,85,0.2)"/>
+  
+  <!-- Rayos de luz largos -->
+  <g stroke="url(#logoRayGradient)" stroke-width="2" stroke-linecap="round" opacity="0.8" filter="url(#glow)">
+    <!-- Rayos principales -->
+    <line x1="100" y1="10" x2="100" y2="30"/>
+    <line x1="135" y1="15" x2="125" y2="30"/>
+    <line x1="160" y1="40" x2="140" y2="45"/>
+    <line x1="175" y1="70" x2="155" y2="70"/>
+    <line x1="160" y1="100" x2="140" y2="95"/>
+    <line x1="135" y1="125" x2="125" y2="110"/>
+    
+    <!-- Rayos izquierdos -->
+    <line x1="65" y1="15" x2="75" y2="30"/>
+    <line x1="40" y1="40" x2="60" y2="45"/>
+    <line x1="25" y1="70" x2="45" y2="70"/>
+    <line x1="40" y1="100" x2="60" y2="95"/>
+    <line x1="65" y1="125" x2="75" y2="110"/>
+  </g>
+  
+  <!-- Rayos medianos -->
+  <g stroke="#F0E68C" stroke-width="1.5" stroke-linecap="round" opacity="0.9">
+    <line x1="100" y1="15" x2="100" y2="25"/>
+    <line x1="120" y1="20" x2="115" y2="30"/>
+    <line x1="80" y1="20" x2="85" y2="30"/>
+    <line x1="130" y1="35" x2="120" y2="40"/>
+    <line x1="70" y1="35" x2="80" y2="40"/>
+  </g>
+  
+  <!-- Punto de luz central brillante -->
+  <circle cx="100" cy="40" r="4" fill="#FFFACD" filter="url(#glow)"/>
+  <circle cx="100" cy="40" r="2" fill="#FFF"/>
+  
+  <!-- Reflexión en la base -->
+  <ellipse cx="100" cy="145" rx="40" ry="5" fill="rgba(255,248,220,0.3)"/>
+  
+  <!-- Texto Aurora -->
+  <text x="100" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4682B4">AURORA</text>
+  <text x="100" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8B7355">PROGRAM</text>
+</svg>

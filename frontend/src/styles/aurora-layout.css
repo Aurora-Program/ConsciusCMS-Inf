@@ -1,0 +1,45 @@
+/* aurora-layout.css - layout helpers and containers */
+
+/* Page containers - standardized full-width structure */
+.aurora-page-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--aurora-surface-bg-subtle) 0%, var(--aurora-surface-white) 100%);
+}
+
+/* Main content container - centers content with max-width */
+.aurora-container {
+  max-width: var(--aurora-max-width);
+  margin: 0 auto;
+  padding: 0 var(--aurora-space-md);
+}
+
+/* Container variants */
+.aurora-container--narrow { max-width: 900px; }
+.aurora-container--wide { max-width: 1400px; }
+.aurora-container--full { max-width: none; padding: 0; }
+
+.aurora-row { display:flex; flex-wrap:wrap; gap: var(--aurora-space-md); }
+.aurora-col { flex: 1 1 0; min-width: 200px; }
+
+/* Responsive container variants */
+.aurora-narrow { max-width: 900px; margin: 0 auto; }
+.aurora-wide { max-width: 1400px; margin: 0 auto; }
+
+/* Simple stack */
+.aurora-stack { display:flex; flex-direction:column; gap: var(--aurora-space-md); }
+
+/* Full-width utilities */
+.aurora-full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+@media (max-width: 768px) {
+  .aurora-container {
+    padding: 0 var(--aurora-space-sm);
+  }
+}

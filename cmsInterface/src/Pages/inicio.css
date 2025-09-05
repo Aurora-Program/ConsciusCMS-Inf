@@ -1,0 +1,1238 @@
+
+@media (min-width:320px)  { 
+
+
+
+ }
+
+
+@media (max-width:481px)  {
+
+
+  .ql-size-small{
+
+    font-size: 15px;
+   }
+
+
+
+
+
+
+.pagination{
+  font-size: 17px;
+}
+
+
+  .languageSelector{
+    font-size: 17px;
+  }
+  .languageSelected{
+    font-size: 17px;
+  }
+
+
+  .textDescription{
+    font-family:  "utopia-std",serif;
+    font-size: 26px;
+    line-height: 1.2em
+
+  
+   }
+
+   .closeButton{
+   
+   
+    font-size: 19px;
+  }
+
+   
+
+  .info{
+    font-size: 17px;
+  }
+
+
+   .textDescriptionProject{
+    font-family:  "utopia-std",serif;
+    font-size: 26px;
+    line-height: 1.2em
+
+  
+  
+   }
+  .buttonElementsDescription{
+    visibility:hidden;
+    width: 0px;
+    height: 0px;
+  } 
+  .topElementsDescription{
+
+    visibility:visible;
+  
+    
+    
+    
+    }
+  
+ 
+  .pictureContainer{
+    width:100vw; height:80vh; z-index:-2;
+
+  }
+  .divTextProyect{
+     padding-left:1%; padding-top:1%; 
+    }
+
+    
+ .DescriptionRightColumn{
+
+       min-height:93%;
+  padding-right: 1%;
+  padding-left: 1%;
+
+
+}
+
+    .DescriptionLeftColumn{
+      visibility:hidden;
+      width: 0px;
+      height: 0px;
+      padding: 0px;
+      margin: 0px;
+      
+    
+    
+    
+     min-height:93%
+
+      
+    
+     }
+
+     .imageVertical{
+      z-index:-1;  display: block;  margin-left: auto; margin-bottom:100% ;  margin-right: auto; margin-top:0%;  width: 97vw; height: auto; max-height: 75vh; object-fit: contain; 
+    
+    }
+      
+    
+      .image{
+        display: block;  width:97vw;  object-fit:contain;   z-index:-1; vertical-align: top; margin-left: auto; margin-right: auto;
+    
+      }
+
+}
+
+  @media (max-width:640px){
+
+    .inicioLogosContainerDiv{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    
+    
+    }
+    
+    .inicioLogosWrapperDiv{
+      display: flex;
+      width: 230px;
+     height: 330px;
+      margin-bottom: 120px;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+    }
+    
+    .inicioFinanciacionDiv{
+      
+    
+    margin: auto;
+      font-size: 13px;
+      padding: 20px;
+      text-align: center;
+      font-family:  "courier-std",monospace;
+    
+    }
+    .inicioPlanDiv{
+    
+      width: 195px;
+      margin: auto;
+      height: 130px;
+  
+     
+      background-image: url("../assets/ima1m.png");
+      background-size: contain;
+    
+      background-repeat:  no-repeat
+    }
+    
+    .inicioEuropaDiv{
+    
+      width:130px;
+      margin: auto;
+    
+      height: 160px;
+      background-image: url("../assets/ima2m.png");
+      background-size: contain;
+    
+    
+      background-repeat: no-repeat
+    
+    }
+  }
+
+  @media (min-width:481px)  {
+
+    
+
+
+    .closeButton{
+   
+   
+      font-size: 16px;
+    }
+ 
+
+   
+
+
+    .pagination{
+      font-size: 17px;
+    }
+   
+   .info{
+    font-size: 18px;
+   }
+   
+    .textDescriptionProject{
+      font-family:  "utopia-std",serif;
+      font-size: 22px;
+      line-height: 1.2em}
+  
+    .siteLinks{
+      font-size: 13px;
+    }
+    .contactInfo{
+      font-size: 13px;
+    }
+    .phoneInfo{
+      font-size: 13px;
+    }
+    .languageSelector{
+      font-size: 18px;
+    }
+    .languageSelected{
+      font-size: 18px;
+    }
+    
+    .buttonElementsDescription{
+      visibility:visible;
+     
+    } 
+    .topElementsDescription{
+      visibility:hidden;
+      height: 0px;
+     
+    } 
+
+    .divTextProyect{
+      width: 50%; min-width: 480px; padding-left:1%; padding-top:0.7%
+      }
+
+    .DescriptionLeftColumn{
+      visibility:visible;
+      width: 33%;
+    
+      padding-left: 1%;
+     height: 96%;
+           min-height:96%
+      
+    
+     }
+
+     
+ .DescriptionRightColumn{
+
+  width: 66%;
+  min-height:96%;
+  height: 96%;
+  padding-right: 5%;
+ }
+
+     .pictureContainer{
+      width:100vw; height:97vh; z-index:-2; 
+    }
+  
+    .imageVertical{
+      z-index:-1;  display: block; margin-left: auto;  margin-right: auto; margin-top:2% ; height:91%; width: 98%; object-fit: contain;
+    
+    }
+      
+    
+      .image{
+        width:100%;  height:100% ; object-fit:cover;  height: 100vh; z-index:-1
+    
+      }
+
+      .textDescription{
+        font-family: "utopia-std",serif;
+        font-size: 20x;
+       
+      
+       }
+
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  {
+
+
+
+  .inicioLogosContainerDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  
+  
+  }
+  
+  .inicioLogosWrapperDiv{
+    display: flex;
+    width: 630px;
+    height: 150px;
+    margin-bottom: 50px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .inicioFinanciacionDiv{
+    
+  
+  margin: auto;
+    font-size: 13px;
+    padding: 30px;
+    font-family:  "courier-std",monospace;
+  
+  }
+  .inicioPlanDiv{
+  
+    width: 200px;
+    margin: auto;
+    height: 120px;
+   
+    background-image: url("../assets/ima1.png");
+    background-size: contain;
+  
+    background-repeat:  no-repeat
+  }
+  
+  .inicioEuropaDiv{
+  
+    width:200px;
+    margin: auto;
+  
+    height: 44px;
+    background-image: url("../assets/ima2.png");
+    background-size: contain;
+  
+  
+    background-repeat: no-repeat
+  
+  }
+
+
+  .closeButton{
+   
+   
+    font-size: 18px;
+  }
+ 
+
+  .topElementsDescription{
+    visibility:hidden;
+   
+  } 
+  .textDescription{
+    font-family:  "utopia-std",serif;
+    font-size:22px;
+   
+  
+   }
+
+   
+   .siteLinks{
+    font-size: 16px;
+  }
+  .contactInfo{
+    font-size: 16px;
+  }
+  .phoneInfo{
+    font-size: 16px;
+  }
+
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+
+
+
+
+.textDescription{
+  font-family:  "utopia-std",serif;
+  font-size: 24;
+ 
+
+ }
+@media (min-width:1025px) { 
+
+ 
+
+  .siteLinks{
+    font-size: 16px;
+  }
+  .contactInfo{
+    font-size: 16px;
+  }
+  .phoneInfo{
+    font-size: 16px;
+  }
+
+  .textDescription{
+    font-family:  "utopia-std",serif;
+    font-size: 28px;
+   
+  
+   }
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+
+  .closeButton{
+   
+   
+    font-size: 19px;
+  }
+ 
+
+  .textDescription{
+    font-family:  "utopia-std",serif;
+    font-size: 28px;
+  }
+ 
+  
+  
+   
+
+
+  /* hi-res laptops and desktops */ }
+
+
+
+
+ 
+
+
+
+   .ql-size-small{
+
+    font-size: 15px;
+   }
+ 
+
+  .textDescription{
+    line-height: 1.1em
+  
+   }
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+
+
+
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  html {
+    font-family: "utopia-std",serif;
+   
+  }
+  
+  
+  .DescriptionRightColumn a {
+    
+    text-decoration: underline;
+    font-style: italic;
+    color: black;
+   }
+   .divTextProyect a {
+    
+    text-decoration: underline;
+    font-style: italic;
+    color: black;
+   }
+
+
+  
+  body {
+  
+  
+ 
+  
+       overflow-y: hidden;  /* Hide vertical scrollbar */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        touch-action: pan-x;
+        touch-action: pan-y;
+    }
+  
+    div[data-transition="yes"]{
+      transition: top 1s, left 750ms, height 1s, width 750ms ;
+      visibility:visible;
+    }
+  
+    div[data-transition="no"]{
+      height: 0vh;
+      width:  0vw;
+    }
+    
+  
+  .center {
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    height: 100vh;
+    width: 100vw;
+  
+  
+  }
+  
+  
+  .button{
+    position: absolute;
+    top: 100vh;
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  
+    visibility:hidden;
+   
+  }
+  
+  
+  .top{
+    position: absolute;
+    top: -100vh;
+    left: 0vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    visibility:hidden;
+   
+  }
+  
+  .left {
+    position: absolute;
+    top: 0vh;
+    left: -100vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+   
+    visibility:hidden;
+  }
+  
+  
+  .right {
+    position: absolute;
+    top: 0vh;
+    left: 100vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    visibility:hidden;
+  }
+  
+  .areatop{
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    height:20vh;
+    width: 100vw;
+    z-index: 3;
+    
+   
+  }
+  
+  .areabutton{
+    position: absolute;
+    top: 80vh;
+    left: 0vw;
+    height:20vh;
+    width: 100vw;
+    
+  }
+
+  .areatoplogos{
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    height:50vh;
+    width: 100vw;
+    z-index: 3;
+    
+   
+  }
+  
+  .areabuttonlogos{
+    position: absolute;
+    top: 50vh;
+    left: 0vw;
+    height:50vh;
+    width: 100vw;
+    
+  }
+  
+  .arealeft{
+    position: absolute;
+    top: 20vh;
+    left: 0vw;
+    height:60vh;
+    width: 50vw;
+    
+  }
+  
+  
+  
+  .arearight{
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
+    height:60vh;
+    width: 50vw;
+    
+  }
+  
+  .projectTitle{
+   
+    background: none!important;
+    border: none;
+    padding:20px 0px 0px 0px  !important;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: "courier-std",monospace;
+    font-style: italic;
+    cursor: pointer;
+    white-space: nowrap;
+   
+    
+  }
+
+  .projectTitleMobile{
+   
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: rgb(255, 255, 255);
+   font-size: 18px;
+   font-family: "courier-std",monospace;
+   font-style: italic;
+    cursor: pointer;
+    white-space: nowrap
+  }
+
+  .projectTitleOnModalMobile{
+   
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: rgb(0, 0, 0);
+   font-size: 17px;
+   font-family: "courier-std",monospace;
+   font-style: italic;
+
+  
+  }
+
+
+
+
+  .projectTitleOnModal{
+   
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: rgb(0, 0, 0);
+   font-size: 17px;
+   font-family: "courier-std",monospace;
+   font-style: italic;
+  }
+
+
+
+  .titleInPlace{
+    text-decoration: underline;
+  }
+  .titleNoInPlace{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ .titleNoInPlace:hover{
+    text-decoration: underline;
+
+ }
+  .layout{
+    position: absolute;  top:0vh; padding: 2% 2% 2% 2%; justify-content: center;
+  }
+  
+  .siteTitle{ 
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    padding:20px 0px 0px 0px  !important;
+   
+  
+
+    /*optional*/
+
+    /*input has OS specific font-family*/
+    color: rgb(255, 255, 255);
+   font-size: 17px;
+   font-family: "courier-std",monospace;
+    cursor: pointer;
+    white-space: nowrap
+  }
+  .siteTitleMobile{ 
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+
+    /*input has OS specific font-family*/
+    color: rgb(255, 255, 255);
+   font-size: 18px;
+   font-family: "courier-std",monospace;
+    cursor: pointer;
+    white-space: nowrap
+  }
+
+ 
+
+  .siteTitle:hover{
+    text-decoration: underline;
+  }
+  .languageSelector{ 
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+
+    /*input has OS specific font-family*/
+    color: rgb(0, 0, 0);
+
+    font-family: "courier-std",monospace;
+    cursor: pointer;
+  }
+
+
+  .languageSelector:hover{
+    text-decoration: underline;
+  }
+
+  .languageSelected{
+    
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+
+    /*input has OS specific font-family*/
+    color: rgb(0, 0, 0);
+    
+    font-family: "courier-std",monospace;
+ 
+   
+  }
+
+
+
+ .siteLinks, .siteLinks:link{
+  color: rgb(0, 0, 0);
+ 
+  font-family: "courier-std",monospace;
+  text-decoration: none; 
+  font-style: normal;
+ }
+
+
+
+
+ .siteLinks:hover{
+  color: rgb(0, 0, 0);
+ 
+  font-family: "courier-std",monospace;
+  text-decoration: underline; 
+  font-style: normal;
+ }
+
+.contactInfo, .contactInfo:link{
+  color: rgb(0, 0, 0);
+
+  font-family: "courier-std",monospace;
+  text-decoration: none; 
+  font-style: normal;
+
+}
+
+
+
+.contactInfoMobile{
+  color: rgb(0, 0, 0);
+
+  font-family: "courier-std",monospace;
+  text-decoration: none; 
+  font-size: 17;
+}
+
+.phoneInfo{
+  color: rgb(0, 0, 0);
+
+  font-family: "courier-std",monospace;
+  text-decoration: none; 
+ 
+}
+.phoneInfoMobile{
+  color: rgb(0, 0, 0);
+
+  font-family: "courier-std",monospace;
+  text-decoration: none; 
+  font-size: 17px;
+}
+
+
+.contactInfo:hover{
+  color: rgb(0, 0, 0);
+
+  font-family: "courier-std",monospace;
+  text-decoration: underline; 
+}
+.contactInfoMobile:hover{
+  color: rgb(0, 0, 0);
+
+  font-family: "courier-std",monospace;
+  text-decoration: underline; 
+  font-size: 17px;
+}
+
+p { 
+  margin: 0 !important; 
+  
+}
+
+.DescriptionRightColumn  p + p { 
+  margin: 0 !important; 
+  text-indent: 1em;
+}
+
+.divTextProyect p + p {
+  margin: 0 !important; 
+  text-indent: 1em;
+
+}
+
+  .siteTitleOnModal{ 
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+   
+    /*input has OS specific font-family*/
+    color: rgb(0, 0, 0);
+   font-size: 17px;
+   font-family: "courier-std",monospace;
+   margin-right: 0.9em;
+   text-decoration: none;
+  
+  }
+
+
+
+ 
+  .siteTitleOnModal:link{
+    text-decoration: none;
+  }
+
+
+  .siteTitleOnModalMobile{ 
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+   
+    /*input has OS specific font-family*/
+    color: rgb(0, 0, 0);
+   font-size: 17px;
+   font-family: "courier-std",monospace;
+  
+  }
+  
+  .slideName{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+   
+    /*input has OS specific font-family*/
+    color: rgb(255, 255, 255);
+   font-size: 18px;
+   font-family: "courier-std",monospace;
+   font-style: italic;
+   white-space: nowrap;
+   margin-right: 0.5em;
+
+  }
+
+  .slideNameMobile{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+   
+    /*input has OS specific font-family*/
+    color: rgb(255, 255, 255);
+   font-size: 18px;
+   font-family: "courier-std",monospace;
+   white-space: nowrap
+  }
+
+
+  .info{
+    color:black;
+    text-decoration: none;
+    font-family: "courier-std",monospace;
+    font-style: italic;
+    padding-bottom: 30px;
+
+  }
+  .info:link{
+    color:black;
+    text-decoration: none;
+    font-family: "courier-std",monospace;
+    font-style: italic;
+
+  }
+
+  .info:hover{
+    text-decoration: underline;
+    color:black;
+    font-family: "courier-std",monospace;
+  }
+  
+  
+  .areabutton:hover{
+    cursor: url('../assets/flecha4.svg') 32 32 , auto;
+  }
+  
+  .areatop:hover{
+    cursor: url('../assets/flecha3.svg'), auto;
+  }
+
+  .areabuttonlogos:hover{
+    cursor: url('../assets/flecha4.svg'), auto;
+  }
+  
+  .areatoplogos:hover{
+    cursor: url('../assets/flecha3.svg'), auto;
+  }
+  
+  .arealeft:hover{
+    cursor: url('../assets/flecha1.svg'), auto;
+  }
+  
+  .arearight:hover{
+    cursor: url('../assets/flecha2.svg'), auto;
+  }
+  
+  /*******
+  overview
+  *******/
+  
+  .overviewbuttondiv{
+   z-index: 4;
+  }
+  .overviewbutton{
+    width: 50px;
+   
+  }
+  .overviewopen{
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: width 1s;
+    background-color: white;
+    overflow: hidden;
+    z-index: 5;
+   }
+
+
+   .curriculum{
+    z-index: 4;
+    position: relative;
+   }
+
+   .overviewclose{
+    position: absolute;
+    width: 0vw;
+    top: 0;
+    left: 0vw;
+    height: 100vh;
+    transition: width 1s;
+    background-color: white;
+    overflow: hidden;
+    z-index: 5;
+  }
+  .overviewcontainer{
+    width: 300px
+  }
+  .overviewclosebuttondiv{
+    position: relative;
+    left: calc(100% - 30px);
+    top: 10px
+  }  
+  .overviewclosebutton{
+      width: 20px;
+  }
+  
+  /*******
+  Project
+  *******/
+  
+  .projectbuttondiv{
+    z-index: 4;
+
+  }
+
+
+  
+  .projectbutton{
+    width: 50px;
+  }
+  .projectopen{
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    top: 0vh;
+    left: calc(100vw - 300px);
+    transition: left 1s;
+    background-color: white;
+    overflow: hidden;
+    z-index: 5;
+   }
+   
+   .projectclose{
+     position: absolute;
+     width: 0vw;
+     height: 100vh;
+     top:  0vh;
+     left: 100vw;
+     transition: left 1s, width 1s;
+     background-color: white;
+     overflow: hidden;
+     z-index: 5;
+   }
+  
+   .projectcontainer{
+    width: 300px
+   }
+  
+   .projectclosebuttondiv{
+    position: relative;
+    left: calc(100% - 30px);
+    top: 10px
+    }
+  
+    .projectclosebutton{
+      width: 20px;
+    }
+  
+  /*******
+  Slide 
+  ******/
+  
+  .slidebuttondiv{
+    position:absolute; 
+    left: 52vw;
+    color:white;
+    top: 91vh;
+  }
+  
+  .slidebutton{
+    width: 50px;
+  }
+  
+  .slideclosebuttondiv{
+    position: relative;
+    left: calc(100% - 30px);
+    top: 10px
+    }
+  
+     
+  .slideopen{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: calc(100vh - 400px);
+    left: calc(50vw - 200px);
+    transition: top 1s, height 1s;
+    background-color: white;
+    overflow: hidden;
+    z-index: 5;
+    
+   }
+   
+   .slideclose{
+     position: absolute;
+     width: 400px;
+     height: 0vh;
+     top:  100vh;
+     left: calc(50vw - 200px);
+     transition: top 1s, height 1s;
+     background-color: white;
+     overflow: hidden;
+   
+   }
+   
+   .slidecontainer{
+     height: 400px;
+   }
+  
+    .slideclosebutton{
+      width: 20px;
+    }
+  
+
+  h4{
+    padding: 4px 10px 3px 10px;
+  }
+  h3{
+    padding: 4px 10px 3px 10px;
+  }
+  
+  
+  .event{
+  
+    position: absolute;
+    height: 20vh;
+    width: 20vw;
+    left: 30vw;
+    background-color: white;
+    margin-top: 40px;
+    z-index: 5;
+  
+  }
+  .eventclosebuttondiv{
+    position: relative;
+    left: 85%;
+    top:2%;
+  }
+  .eventclosebutton{
+    width: 20px
+  }
+  
+  
+  .modal{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+
+
+  }
+
+  .modalClass{
+    background-color: rgb(218, 209, 193);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .pagination{
+
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: "courier-std",monospace;
+    /*input has OS specific font-family*/
+    color: rgb(255, 255, 255);
+ 
+   
+
+
+  }
+nav-link-area-selected{
+  color:black
+}
+
+.closeButton{
+   
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+
+  /*input has OS specific font-family*/
+  color: rgb(0,0,0);
+  font-weight: 00 ;
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.closeDiv{
+
+  position: absolute;
+  top:20px;
+  right: 20px
+
+}
+
+.projectTitle:hover{
+  text-decoration: underline;
+}

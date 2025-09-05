@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <!-- Definir gradientes -->
+  <defs>
+    <radialGradient id="sunGradient" cx="50%" cy="100%">
+      <stop offset="0%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Sol naciente (medio círculo) -->
+  <path d="M 50 120 A 60 60 0 0 1 170 120 Z" fill="url(#sunGradient)" stroke="#FFF" stroke-width="3"/>
+  
+  <!-- Rayos del sol naciente -->
+  <g stroke="#FFD700" stroke-width="4" stroke-linecap="round">
+    <!-- Rayos centrales más largos -->
+    <line x1="110" y1="120" x2="110" y2="40" />
+    
+    <!-- Rayos hacia la izquierda -->
+    <line x1="100" y1="120" x2="95" y2="45" />
+    <line x1="90" y1="118" x2="82" y2="50" />
+    <line x1="80" y1="115" x2="68" y2="55" />
+    <line x1="70" y1="110" x2="55" y2="62" />
+    <line x1="62" y1="105" x2="45" y2="70" />
+    <line x1="55" y1="98" x2="35" y2="78" />
+    
+    <!-- Rayos hacia la derecha -->
+    <line x1="120" y1="120" x2="125" y2="45" />
+    <line x1="130" y1="118" x2="138" y2="50" />
+    <line x1="140" y1="115" x2="152" y2="55" />
+    <line x1="150" y1="110" x2="165" y2="62" />
+    <line x1="158" y1="105" x2="175" y2="70" />
+    <line x1="165" y1="98" x2="185" y2="78" />
+    
+    <!-- Rayos laterales más cortos -->
+    <line x1="50" y1="120" x2="25" y2="85" />
+    <line x1="170" y1="120" x2="195" y2="85" />
+  </g>
+  
+  <!-- Texto AURORA -->
+  <text x="200" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#1565C0">
+    AURORA
+  </text>
+</svg>

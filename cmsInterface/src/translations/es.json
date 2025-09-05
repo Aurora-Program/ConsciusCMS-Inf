@@ -1,0 +1,64 @@
+{
+  "platforms": {
+    "heroTitle": "Ecosistema de Innovación",
+    "heroTitleHighlight": "Ética en IA",
+    "heroSubtitle": "Conectando investigación, desarrollo y aplicación responsable",
+    "heroDescription": "Nuestro ecosistema integra tres plataformas complementarias que trabajan en sinergia para avanzar en la investigación ética de la inteligencia artificial y su implementación responsable en la sociedad.",
+    
+    "ethicsi": {
+      "title": "Ethics AI Research",
+      "tagline": "Investigación Fundamental en Ética de IA",
+      "description": "Plataforma dedicada a la investigación académica rigurosa sobre los fundamentos éticos de la inteligencia artificial, desarrollando marcos teóricos y directrices para el desarrollo responsable de IA.",
+      "link": "Explorar Investigación"
+    },
+    
+    "innvalab": {
+      "title": "Innovation Lab",
+      "tagline": "Desarrollo Tecnológico Ético",
+      "description": "Laboratorio de innovación que transforma la investigación ética en soluciones tecnológicas prácticas, desarrollando herramientas y prototipos bajo principios éticos sólidos.",
+      "link": "Ver Proyectos"
+    },
+    
+    "harmonia": {
+      "title": "Harmonia",
+      "tagline": "Implementación Comunitaria",
+      "description": "Plataforma de consultoría y formación que facilita la adopción responsable de tecnologías de IA en organizaciones, conectando la investigación con la práctica real.",
+      "link": "Conocer Servicios"
+    },
+    
+    "synergy": {
+      "title": "Sinergia del Ecosistema",
+      "intro": "Nuestro enfoque integrado genera un ciclo virtuoso de innovación ética:",
+      
+      "steps": {
+        "research": {
+          "title": "Investigación Rigurosa",
+          "description": "Ethics AI Research genera conocimiento fundamental sobre principios éticos en IA a través de investigación académica y colaboración interdisciplinaria."
+        },
+        "development": {
+          "title": "Desarrollo Responsable",
+          "description": "Innovation Lab transforma este conocimiento en soluciones tecnológicas prácticas, manteniendo siempre los más altos estándares éticos."
+        },
+        "implementation": {
+          "title": "Aplicación Real",
+          "description": "Harmonia facilita la implementación de estas soluciones en contextos reales, generando retroalimentación valiosa para la investigación."
+        }
+      }
+    },
+    
+    "impact": {
+      "title": "Impacto Sistémico",
+      "description": "Nuestro ecosistema genera un impacto transformador a través de:",
+      "stats": {
+        "platforms": "Plataformas Integradas",
+        "collaboration": "Colaboración Infinita",
+        "vision": "Visión Unificada"
+      }
+    },
+    
+    "cta": {
+      "title": "Únete al Futuro de la IA Ética",
+      "description": "Descubre cómo nuestro ecosistema puede impulsar tus proyectos de investigación, desarrollo o implementación de IA responsable."
+    }
+  }
+}

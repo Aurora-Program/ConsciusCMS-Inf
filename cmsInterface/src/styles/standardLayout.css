@@ -1,0 +1,521 @@
+/* ==========================================================================
+   AURORA STANDARD LAYOUT SYSTEM
+   ========================================================================== */
+
+/* Layout Variables */
+:root {
+  --layout-max-width: 1400px;
+  --layout-content-width: 1400px;
+  --layout-narrow-width: 800px;
+  --layout-wide-width: 1600px;
+  
+  --layout-padding-x: 2rem;
+  --layout-padding-y: 1.5rem;
+  --layout-gap: 2rem;
+  
+  --layout-header-height: 80px;
+  --layout-sidebar-width: 280px;
+  
+  /* Responsive breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1400px;
+}
+
+/* ==========================================================================
+   MAIN LAYOUT CONTAINERS
+   ========================================================================== */
+
+/* Standard Page Container - MAIN WRAPPER FOR ALL PAGES */
+.aurora-page {
+  background: var(--bg-primary);
+  padding: calc(var(--header-height) + var(--menu-height) + var(--space-md)) 0 var(--layout-padding-y) 0;
+  margin: 0 auto;
+  max-width: 1400px !important;
+  width: 1400px !important;
+  box-sizing: border-box !important;
+}
+
+/* Content Width Variants - CENTERED CONTAINERS */
+.aurora-container {
+  max-width: var(--layout-content-width) !important;
+  width: var(--layout-content-width) !important;
+  margin: 0 auto !important;
+  padding: 0 var(--layout-padding-x) !important;
+  box-sizing: border-box !important;
+  text-align: left;
+}
+
+.aurora-container--narrow {
+  max-width: var(--layout-narrow-width);
+}
+
+.aurora-container--wide {
+  max-width: var(--layout-wide-width);
+}
+
+.aurora-container--full {
+  max-width: none;
+  padding: 0 var(--layout-padding-x);
+}
+
+/* ==========================================================================
+   PAGE HEADERS
+   ========================================================================== */
+
+.aurora-page-header {
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.aurora-page-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  background: var(--gradient-aurora);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 var(--space-md) 0;
+  line-height: 1.2;
+}
+
+.aurora-page-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   CONTENT SECTIONS
+   ========================================================================== */
+
+.aurora-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.aurora-section:last-child {
+  margin-bottom: 0;
+}
+
+.aurora-section-header {
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.aurora-section-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.aurora-section-description {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
+   GRID LAYOUTS
+   ========================================================================== */
+
+.aurora-grid {
+  display: grid;
+  gap: var(--layout-gap);
+  margin-bottom: var(--space-xl);
+}
+
+.aurora-grid--1 {
+  grid-template-columns: 1fr;
+}
+
+.aurora-grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.aurora-grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.aurora-grid--4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Fixed grid columns */
+.aurora-grid--2-fixed {
+  grid-template-columns: 1fr 1fr;
+}
+
+.aurora-grid--3-fixed {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Sidebar layouts */
+.aurora-grid--sidebar-left {
+  grid-template-columns: var(--layout-sidebar-width) 1fr;
+  gap: var(--space-2xl);
+}
+
+.aurora-grid--sidebar-right {
+  grid-template-columns: 1fr var(--layout-sidebar-width);
+  gap: var(--space-2xl);
+}
+
+/* ==========================================================================
+   CARD LAYOUTS
+   ========================================================================== */
+
+.aurora-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  height: fit-content;
+}
+
+.aurora-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.aurora-card--compact {
+  padding: var(--space-lg);
+}
+
+.aurora-card--spacious {
+  padding: var(--space-2xl);
+}
+
+.aurora-card--gradient {
+  background: var(--gradient-aurora-subtle);
+  border: 1px solid rgba(255, 140, 0, 0.2);
+}
+
+/* Card Headers */
+.aurora-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.aurora-card-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.aurora-card-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+}
+
+.aurora-card-body {
+  margin-bottom: var(--space-lg);
+}
+
+.aurora-card-body:last-child {
+  margin-bottom: 0;
+}
+
+.aurora-card-footer {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: flex-end;
+}
+
+/* ==========================================================================
+   TOOLBAR & ACTIONS
+   ========================================================================== */
+
+.aurora-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.aurora-toolbar-left,
+.aurora-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.aurora-toolbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   TABLES
+   ========================================================================== */
+
+.aurora-table-container {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.aurora-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.aurora-table th,
+.aurora-table td {
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.aurora-table th {
+  background: var(--bg-muted);
+  font-weight: 600;
+  color: var(--text-primary);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.aurora-table tbody tr:hover {
+  background: var(--bg-muted);
+}
+
+.aurora-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  :root {
+    --layout-content-width: 1000px;
+    --layout-padding-x: 1.5rem;
+  }
+  
+  .aurora-grid--sidebar-left,
+  .aurora-grid--sidebar-right {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  
+  .aurora-grid--2-fixed,
+  .aurora-grid--3-fixed {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --layout-content-width: 900px;
+    --layout-gap: 1.5rem;
+  }
+  
+  .aurora-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-md);
+  }
+  
+  .aurora-toolbar-left,
+  .aurora-toolbar-right,
+  .aurora-toolbar-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --layout-content-width: 100%;
+    --layout-padding-x: 1rem;
+    --layout-padding-y: 1rem;
+    --layout-gap: 1rem;
+  }
+  
+  .aurora-page-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .aurora-section-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .aurora-card {
+    padding: var(--space-lg);
+  }
+  
+  .aurora-card--compact {
+    padding: var(--space-md);
+  }
+  
+  .aurora-card--spacious {
+    padding: var(--space-xl);
+  }
+  
+  .aurora-grid--2,
+  .aurora-grid--3,
+  .aurora-grid--4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --layout-padding-x: 0.75rem;
+  }
+  
+  .aurora-page-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .aurora-card {
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+  }
+  
+  .aurora-toolbar {
+    padding: var(--space-md);
+  }
+  
+  .aurora-table th,
+  .aurora-table td {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.aurora-full-height {
+  min-height: calc(100vh - var(--layout-header-height));
+}
+
+.aurora-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.aurora-spacer {
+  margin: var(--space-2xl) 0;
+}
+
+.aurora-spacer--large {
+  margin: var(--space-3xl) 0;
+}
+
+.aurora-divider {
+  height: 1px;
+  background: var(--border-light);
+  margin: var(--space-2xl) 0;
+  border: none;
+}
+
+/* ==========================================================================
+   ANIMATION UTILITIES
+   ========================================================================== */
+
+.aurora-fade-in {
+  animation: auroraFadeIn 0.5s ease-out;
+}
+
+.aurora-slide-up {
+  animation: auroraSlideUp 0.5s ease-out;
+}
+
+.aurora-scale-in {
+  animation: auroraScaleIn 0.3s ease-out;
+}
+
+@keyframes auroraFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes auroraSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes auroraScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   CONTENT WRAPPER STYLES
+   ========================================================================== */
+
+.aurora-content {
+  width: 100%;
+}
+
+.aurora-content--padded {
+  width: 100%;
+  padding: var(--layout-padding-y) 0;
+}
+
+/* Ensure all page content takes full width */
+.aurora-page-content {
+  width: 100%;
+  max-width: none;
+}
+
+/* Ensure all pages are properly centered */
+.aurora-page .aurora-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}

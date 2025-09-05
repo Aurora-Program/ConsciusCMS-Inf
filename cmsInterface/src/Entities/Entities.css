@@ -1,0 +1,51 @@
+.section{
+  
+    padding-top:20px;
+    min-height: 80%vh;
+}
+.sectionloading{
+
+    padding-top:20px;
+    min-height: 80%vh;
+    cursor: loading;
+}
+
+.buttonSelectPage{
+   
+        background: none!important;
+        border: none;
+        padding: 0!important;
+        /*optional*/
+        font-family: arial, sans-serif;
+        /*input has OS specific font-family*/
+        color: rgb(198,94,26);
+        text-decoration: underline;
+        cursor: pointer;
+}
+
+.tituloField {
+    font-weight: bold;
+}
+
+.menuBar {
+
+    background-color:;
+
+}
+
+.menuCell {
+
+    color:white;
+    font-size: x-large;
+    margin-left: 20px;
+    
+
+}
+.menuTitle {
+
+    color:white;
+    margin-right: 60px;
+    
+    
+
+}

@@ -1,0 +1,675 @@
+/* Aurora Article Page - Manteniendo el estilo original genial + mejoras modernas */
+
+@import url('../aurora-design-system.css');
+@import url('../aurora-palette.css');
+
+/* Mantenemos la estructura original pero con Aurora Design System */
+.aurora-article-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--aurora-bg-subtle) 100%);
+    font-family: var(--aurora-font-family);
+    color: var(--aurora-text-primary);
+}
+
+/* Hero Section - estilo original genial mejorado con altura reducida */
+.aurora-article-hero {
+    background: var(--aurora-gradient-primary);
+    color: white;
+    padding: var(--aurora-spacing-md) 0 var(--aurora-spacing-sm);
+    position: relative;
+    overflow: hidden;
+    min-height: 200px; /* Altura mucho más reducida */
+}
+
+.aurora-article-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0);
+}
+
+.aurora-article-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: var(--aurora-spacing-sm);
+    margin-bottom: var(--aurora-spacing-lg);
+    font-size: 0.875rem;
+    position: relative;
+    z-index: 2;
+}
+
+.aurora-breadcrumb-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.aurora-breadcrumb-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.aurora-breadcrumb-current {
+    color: white;
+    font-weight: 600;
+}
+
+.aurora-article-header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: var(--aurora-spacing-sm) 0;
+}
+
+/* Hero logo placed before title on wide screens */
+.aurora-hero-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+/* Wrap header content so logo and title align horizontally on larger viewports */
+.aurora-article-header { display: flex; align-items: center; justify-content: center; gap: 12px; }
+.aurora-article-header .aurora-article-body-title { text-align: left; }
+.aurora-article-header .aurora-article-description { text-align: left; margin: 0; }
+
+.aurora-article-meta {
+    display: flex;
+    gap: var(--aurora-spacing-md);
+    margin-bottom: var(--aurora-spacing-md);
+    flex-wrap: wrap;
+}
+
+.aurora-article-category,
+.aurora-article-date {
+    display: flex;
+    align-items: center;
+    gap: var(--aurora-spacing-xs);
+    background: var(--aurora-surface-light);
+    padding: var(--aurora-spacing-xs) var(--aurora-spacing-sm);
+    border-radius: var(--aurora-border-radius);
+    font-size: 0.875rem;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.aurora-article-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: var(--aurora-font-weight-bold);
+    line-height: 1.2;
+    margin: var(--aurora-spacing-lg) 0;
+    color: white;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(0, 0, 0, 0.3),
+        1px 1px 0 rgba(0, 0, 0, 0.8);
+    /* Añadir contorno para mejor legibilidad */
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.5);
+    text-rendering: optimizeLegibility;
+    position: relative;
+}
+
+/* Nuevo estilo para el título específico del body del artículo */
+.aurora-article-body-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: var(--aurora-font-weight-bold);
+    line-height: 1.2;
+    margin: var(--aurora-spacing-sm) 0;
+    color: white;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(0, 0, 0, 0.3),
+        1px 1px 0 rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.5);
+    text-rendering: optimizeLegibility;
+    position: relative;
+}
+
+.aurora-article-author-info {
+    display: flex;
+    align-items: center;
+    gap: var(--aurora-spacing-sm);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Container principal - estilo original */
+.aurora-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--aurora-spacing-md);
+}
+
+/* Main Content - manteniendo la esencia original */
+.aurora-article-main {
+    padding: var(--aurora-spacing-xl) 0;
+}
+
+.aurora-article-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: var(--aurora-border-radius-lg);
+    box-shadow: var(--aurora-shadow-lg);
+    overflow: hidden;
+    border: 1px solid var(--aurora-border-light);
+    padding: 5px 20px;
+}
+
+.aurora-article-featured-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.aurora-article-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.aurora-article-featured-image:hover img {
+    transform: scale(1.02);
+}
+
+/* Article Body - tipografía original mejorada */
+.aurora-article-body {
+    padding: calc(var(--aurora-spacing-xl) * 1.8) calc(var(--aurora-spacing-xl) * 1.2);
+    line-height: 1.7;
+    font-size: 1.125rem;
+    color: var(--aurora-text-primary);
+}
+
+/* Primer elemento del contenido - más margen superior */
+.aurora-article-body > *:first-child {
+    margin-top: calc(var(--aurora-spacing-lg) * 1.5);
+}
+
+.aurora-article-body h1,
+.aurora-article-body h2,
+.aurora-article-body h3,
+.aurora-article-body h4,
+.aurora-article-body h5,
+.aurora-article-body h6 {
+    color: var(--aurora-primary-dark);
+    margin-top: calc(var(--aurora-spacing-xl) * 1.2);
+    margin-bottom: calc(var(--aurora-spacing-md) * 1.2);
+    font-weight: var(--aurora-font-weight-bold);
+    padding-left: var(--aurora-spacing-sm);
+    padding-right: var(--aurora-spacing-sm);
+}
+
+.aurora-article-body h1 {
+    font-size: 2.2em;
+    color: var(--aurora-primary-dark);
+    margin-bottom: var(--aurora-spacing-md);
+    border-bottom: 2px solid var(--aurora-primary);
+    padding-bottom: var(--aurora-spacing-sm);
+}
+
+.aurora-article-body h2 {
+    font-size: 1.8em;
+}
+
+.aurora-article-body h3 {
+    font-size: 1.4em;
+}
+
+.aurora-article-body p {
+    margin-bottom: calc(var(--aurora-spacing-md) * 1.2);
+    color: var(--aurora-text-secondary);
+    line-height: 1.8;
+    padding-left: var(--aurora-spacing-sm);
+    padding-right: var(--aurora-spacing-sm);
+}
+
+/* Primer párrafo necesita más margen superior */
+.aurora-article-body p:first-child {
+    margin-top: calc(var(--aurora-spacing-lg) * 1.5);
+}
+
+.aurora-article-body a {
+    color: var(--aurora-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.aurora-article-body a:hover {
+    color: var(--aurora-primary-dark);
+    border-bottom-color: var(--aurora-primary-dark);
+}
+
+.aurora-article-body blockquote {
+    border-left: 4px solid var(--aurora-primary);
+    margin: var(--aurora-spacing-lg) 0;
+    padding: var(--aurora-spacing-md) var(--aurora-spacing-lg);
+    font-style: italic;
+    color: var(--aurora-text-secondary);
+    background: var(--aurora-bg-subtle);
+    border-radius: 0 var(--aurora-border-radius) var(--aurora-border-radius) 0;
+}
+
+.aurora-article-body code {
+    background: var(--aurora-bg-subtle);
+    padding: 0.2rem 0.4rem;
+    border-radius: var(--aurora-border-radius-sm);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--aurora-primary-dark);
+}
+
+.aurora-article-body pre {
+    background: var(--aurora-surface-dark);
+    color: white;
+    padding: var(--aurora-spacing-md);
+    border-radius: var(--aurora-border-radius);
+    overflow-x: auto;
+    margin: var(--aurora-spacing-lg) 0;
+}
+
+.aurora-article-body pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+}
+
+/* Placeholder con el estilo original */
+.aurora-article-placeholder {
+    text-align: center;
+    padding: calc(var(--aurora-spacing-xl) * 1.5);
+    color: var(--aurora-text-secondary);
+    background: var(--aurora-bg-subtle);
+    border-radius: var(--aurora-border-radius);
+    margin: calc(var(--aurora-spacing-lg) * 1.5);
+}
+
+/* Tags Section - manteniendo elegancia original */
+.aurora-article-tags-section {
+    padding: 0 var(--aurora-spacing-xl) var(--aurora-spacing-xl);
+    border-top: 1px solid var(--aurora-border-light);
+}
+
+.aurora-article-tags-section h3 {
+    color: var(--aurora-primary-dark);
+    margin-bottom: var(--aurora-spacing-md);
+    font-size: 1.25rem;
+    font-weight: var(--aurora-font-weight-semibold);
+}
+
+.aurora-article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--aurora-spacing-sm);
+}
+
+.aurora-tag {
+    background: var(--aurora-primary-light);
+    color: var(--aurora-primary-dark);
+    padding: var(--aurora-spacing-xs) var(--aurora-spacing-sm);
+    border-radius: var(--aurora-border-radius-full);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.aurora-tag:hover {
+    background: var(--aurora-primary);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: var(--aurora-shadow-md);
+}
+
+/* Navigation - estilo original con mejoras */
+.aurora-article-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--aurora-spacing-xl);
+    padding-top: var(--aurora-spacing-lg);
+    border-top: 1px solid var(--aurora-border-light);
+}
+
+.aurora-article-share {
+    display: flex;
+    align-items: center;
+    gap: var(--aurora-spacing-sm);
+    color: var(--aurora-text-secondary);
+}
+
+.aurora-share-btn {
+    background: var(--aurora-surface-light);
+    color: var(--aurora-primary);
+    border: 1px solid var(--aurora-border-light);
+    padding: var(--aurora-spacing-sm);
+    border-radius: var(--aurora-border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aurora-share-btn:hover {
+    background: var(--aurora-primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--aurora-shadow-md);
+}
+
+/* Footer - manteniendo sencillez original */
+.aurora-article-footer {
+    background: var(--aurora-surface-dark);
+    color: var(--aurora-text-light);
+    padding: var(--aurora-spacing-lg) 0;
+    text-align: center;
+    margin-top: var(--aurora-spacing-xl);
+    font-size: 0.9rem;
+}
+
+/* Not Found - estilo original elegante */
+.aurora-article-not-found {
+    text-align: center;
+    padding: var(--aurora-spacing-xl);
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: var(--aurora-border-radius-lg);
+    box-shadow: var(--aurora-shadow-lg);
+}
+
+.aurora-empty-icon {
+    font-size: 3rem;
+    color: var(--aurora-text-muted);
+    margin-bottom: var(--aurora-spacing-lg);
+}
+
+/* Loading - manteniendo simplicidad original */
+.aurora-loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    gap: var(--aurora-spacing-md);
+}
+
+.aurora-loading-spinner {
+    position: relative;
+}
+
+.aurora-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--aurora-border-light);
+    border-top: 3px solid var(--aurora-primary);
+    border-radius: 50%;
+    animation: aurora-spin 1s linear infinite;
+}
+
+@keyframes aurora-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive - manteniendo la funcionalidad original */
+@media (max-width: 768px) {
+    .aurora-article-hero {
+        padding: var(--aurora-spacing-lg) 0;
+    }
+
+    .aurora-article-title {
+        font-size: 2rem;
+    }
+
+    .aurora-article-body {
+        padding: calc(var(--aurora-spacing-lg) * 1.3);
+        font-size: 1rem;
+    }
+
+    .aurora-article-navigation {
+        flex-direction: column;
+        gap: var(--aurora-spacing-md);
+        align-items: stretch;
+    }
+
+    .aurora-article-meta {
+        flex-direction: column;
+        gap: var(--aurora-spacing-sm);
+    }
+
+    .aurora-container {
+        padding: 0 var(--aurora-spacing-sm);
+    }
+}
+
+/* === NUEVOS ESTILOS PARA CONTENIDO DE ARTÍCULOS === */
+
+/* Article sections with better readability */
+.aurora-article-section {
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: var(--aurora-text-primary);
+}
+
+/* Overview specific tweaks: ensure dark readable text regardless of hero bg */
+.aurora-article-section.aurora-overview-section,
+.aurora-article-section.aurora-overview-section .aurora-section-content,
+.aurora-article-section.aurora-overview-section .aurora-html-content,
+.aurora-overview-section { 
+    color: var(--aurora-text-dark-primary) !important;
+    background: #fff !important; /* keep white but ensure text is dark */
+}
+
+/* Download/document block used by project pages */
+.aurora-download-section .aurora-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: var(--aurora-surface, #fff);
+    color: var(--aurora-text-dark-primary);
+}
+
+.aurora-download-title {
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: var(--aurora-text-dark-primary) !important;
+}
+
+.aurora-download-file {
+    font-size: 0.95rem;
+    color: var(--aurora-text-primary);
+    margin: 0 0 8px 0;
+}
+
+.aurora-download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: var(--aurora-accent, #0b6efd);
+    color: #fff;
+    text-decoration: none;
+}
+
+.aurora-download-link i {
+    opacity: 0.9;
+}
+
+/* If the injected HTML contains white text, force override in typical tags */
+.aurora-article-section.aurora-overview-section p,
+.aurora-article-section.aurora-overview-section span,
+.aurora-article-section.aurora-overview-section div,
+.aurora-article-section.aurora-overview-section li {
+    color: var(--aurora-text-dark-primary) !important;
+}
+
+/* Subtitle styling inside article body */
+.aurora-subtitle {
+    font-size: 1.125rem;
+    color: var(--aurora-text-dark-primary) !important;
+    margin: 0 0 1rem 0;
+    padding-left: var(--aurora-spacing-sm);
+    padding-right: var(--aurora-spacing-sm);
+}
+
+/* Responsive: stack logo above title on small screens */
+@media (max-width: 768px) {
+    .aurora-article-header { flex-direction: column; text-align: center; }
+    .aurora-article-header .aurora-article-body-title { text-align: center; }
+    .aurora-hero-logo { margin-right: 0; margin-bottom: 8px; }
+}
+
+.aurora-section-title {
+    color: var(--color-gray-800);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--aurora-primary);
+    padding-bottom: 0.5rem;
+}
+
+.aurora-section-content {
+    color: var(--color-gray-700);
+    line-height: 1.7;
+}
+
+/* HTML content styling with proper dark text */
+.aurora-html-content {
+    color: var(--color-gray-800);
+}
+
+.aurora-html-content h1,
+.aurora-html-content h2,
+.aurora-html-content h3,
+.aurora-html-content h4,
+.aurora-html-content h5,
+.aurora-html-content h6 {
+    color: var(--color-gray-800);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.aurora-html-content h1 { font-size: 2rem; }
+.aurora-html-content h2 { font-size: 1.5rem; }
+.aurora-html-content h3 { font-size: 1.25rem; }
+
+.aurora-html-content p {
+    color: var(--color-gray-700);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.aurora-html-content ul,
+.aurora-html-content ol {
+    color: var(--color-gray-700);
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.aurora-html-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.aurora-html-content blockquote {
+    background: rgba(102, 126, 234, 0.1);
+    border-left: 4px solid var(--aurora-primary);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--color-gray-700);
+}
+
+.aurora-html-content code {
+    background: var(--color-gray-100);
+    color: var(--color-red-600);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Courier New', monospace;
+}
+
+.aurora-html-content pre {
+    background: var(--color-gray-800);
+    color: var(--color-gray-100);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.aurora-html-content pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+.aurora-html-content a {
+    color: var(--aurora-primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.aurora-html-content a:hover {
+    border-bottom-color: var(--aurora-primary);
+}
+
+.aurora-html-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.aurora-html-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.aurora-html-content th,
+.aurora-html-content td {
+    border: 1px solid var(--color-gray-300);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.aurora-html-content th {
+    background: var(--color-gray-100);
+    font-weight: 600;
+}
+
+/* Text content styling */
+.aurora-text-content {
+    color: var(--color-gray-700);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Complex content (JSON) styling */
+.aurora-complex-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: var(--color-gray-50);
+    color: var(--color-gray-800);
+    border: 1px solid var(--color-gray-200);
+}

@@ -1,0 +1,53 @@
+@media (max-width:481px)  {
+
+  .fieldImageShow{
+
+    height: 200px;
+    width: 320px;
+  
+  }
+
+}
+
+@media (min-width:481px)  {
+
+  .fieldImageShow{
+
+    height: 300px;
+    width: 400px;
+  }
+  
+    .fieldImageShowDiv{
+
+   
+      width: 400px;
+    
+    }
+
+}
+
+
+
+.form {
+
+    width: 44%; 
+    background-color:white;
+    padding: 20px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    box-shadow: 4px 4px lightgrey;
+   }
+
+   .tituloField {
+    font-weight: bold;
+    font-size: 20px
+    
+}
+
+
+.fieldDiv{
+  margin: 0%;
+  padding: 0%;
+}
+

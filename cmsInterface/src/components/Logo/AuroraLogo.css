@@ -1,0 +1,239 @@
+/* Aurora Logo Component Styles */
+.aurora-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* Aurora Logo Image Styles */
+.aurora-logo-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* ConsciusCMS Text Styles */
+.conscium-text {
+  font-family: var(--font-family-sans, 'Arial', sans-serif);
+  font-weight: 700;
+  background: var(--gradient-primary, linear-gradient(135deg, #1E5799 0%, #2989D8 50%, #207cca 51%, #7db9e8 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+  margin-left: var(--space-sm, 8px);
+  font-size: 1.2rem;
+}
+
+.sun-core {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gradient-secondary);
+  position: relative;
+  z-index: 2;
+  box-shadow: 
+    0 0 20px rgba(255, 140, 0, 0.3),
+    inset 0 2px 4px rgba(255, 215, 0, 0.4);
+  animation: sunPulse 3s ease-in-out infinite;
+}
+
+.sun-rays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+}
+
+.ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 12px;
+  background: linear-gradient(to bottom, var(--aurora-gold), var(--aurora-orange));
+  transform-origin: 50% 0;
+  margin-left: -1.5px;
+  margin-top: -30px;
+  border-radius: 2px;
+  animation: rayShine 4s ease-in-out infinite;
+}
+
+.ray:nth-child(even) {
+  height: 8px;
+  margin-top: -28px;
+  opacity: 0.7;
+}
+
+/* Aurora Text Styles */
+.aurora-text {
+  font-family: var(--font-family-sans);
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: var(--gradient-aurora);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(30, 87, 153, 0.1);
+}
+
+/* Size Variants */
+.logo-sm .aurora-logo-image {
+  width: 96px;
+  height: auto;
+}
+
+.logo-sm .conscium-text {
+  font-size: 0.9rem;
+}
+
+.logo-md .aurora-logo-image {
+  width: 128px;
+  height: auto;
+}
+
+.logo-md .conscium-text {
+  font-size: 1.2rem;
+}
+
+.logo-lg .aurora-logo-image {
+  width: 160px;
+  height: auto;
+}
+
+.logo-lg .conscium-text {
+  font-size: 1.5rem;
+}
+
+.logo-xl .aurora-logo-image {
+  width: 224px;
+  height: auto;
+}
+
+.logo-xl .conscium-text {
+  font-size: 1.8rem;
+}
+
+.logo-lg .sun-core {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-lg .sun-rays {
+  width: 75px;
+  height: 75px;
+}
+
+.logo-lg .ray {
+  height: 15px;
+  margin-top: -37px;
+}
+
+.logo-lg .ray:nth-child(even) {
+  height: 11px;
+  margin-top: -35px;
+}
+
+.logo-lg .aurora-text {
+  font-size: 1.8rem;
+}
+
+.logo-xl .sun-core {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-xl .sun-rays {
+  width: 90px;
+  height: 90px;
+}
+
+.logo-xl .ray {
+  height: 18px;
+  margin-top: -45px;
+}
+
+.logo-xl .ray:nth-child(even) {
+  height: 14px;
+  margin-top: -43px;
+}
+
+.logo-xl .aurora-text {
+  font-size: 2.2rem;
+}
+
+/* Animations */
+@keyframes sunPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 
+      0 0 20px rgba(255, 140, 0, 0.3),
+      inset 0 2px 4px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 
+      0 0 30px rgba(255, 140, 0, 0.5),
+      inset 0 2px 4px rgba(255, 215, 0, 0.6);
+  }
+}
+
+@keyframes rayShine {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Hover Effects */
+.aurora-logo:hover .sun-core {
+  animation-duration: 1.5s;
+}
+
+.aurora-logo:hover .ray {
+  animation-duration: 2s;
+}
+
+.aurora-logo:hover .aurora-text {
+  text-shadow: 0 4px 8px rgba(30, 87, 153, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-container {
+    gap: var(--space-sm);
+  }
+  
+  .aurora-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aurora-text {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,95 @@
+/* Original Header Styles - Before Aurora Modernization */
+
+.headDiv{
+    background-color: #31579C;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.headTitle{
+    color: white;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.userAvatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.userName {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.logoutBtn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.logoutBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* Logo styles */
+.headerLogo {
+    height: 40px;
+    width: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .headDiv {
+        padding: 8px;
+    }
+    
+    .headTitle {
+        font-size: 1.4rem;
+    }
+    
+    .userName {
+        display: none;
+    }
+    
+    .userAvatar {
+        width: 30px;
+        height: 30px;
+    }
+}

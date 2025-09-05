@@ -1,0 +1,680 @@
+
+    {
+    "common": {
+      "loading": "Loading...",
+      "home": "Home",
+      "allRightsReserved": "All rights reserved"
+    },
+
+
+    "navigation": {
+      "home": "Home",
+      "manifiest": "Manifesto",
+      "platforms": "Platforms",
+      "labs": "Labs", 
+      "articles": "Blog",
+      "docs": "Documentation",
+      "about": "About",
+      "contact": "Contact"
+    },
+
+
+    "header": {
+      "tagline": "Building an ethical future with electronic intelligence"
+    },
+    
+
+    "nav": {
+      "home": "Home",
+      "manifiest": "Manifesto",
+      "Manifiesto": "Manifesto",
+      "platforms": "Platforms",
+      "labs": "Labs",
+      "articles": "Blog",
+      "docs": "Documentation",
+      "about": "About",
+      "contact": "Contact"
+    },
+
+ 
+    "home": {
+ 
+      "heroConstruction": "Welcome to the future of collaborative intelligence",
+      "heroTitle": "Aurora Program: Ethical, Safe & Community EI",
+      "heroSubtitle": "Open response to ensure the transition to advanced electronic intelligences preserves human dignity, creativity and ecosystem balance",
+      "heroDescription": "A community initiative for an ethical and safe transition to advanced Electronic Intelligence (EI) systems, promoting symbiotic, distributed EI educated by their communities.",
+      
+    
+      "ctaReadManifiesto": "Read Manifiesto",
+      "ctaExplorePlatforms": "Explore Platforms",
+      "ctaJoinLabs": "Join Labs",
+
+     
+      "title": "Aurora Program: Ethical, Safe & Community EI",
+      "subtitle": "Open response to ensure the transition to advanced electronic intelligences preserves human dignity, creativity and ecosystem balance",
+      "description": "A community initiative for an ethical and safe transition to advanced Electronic Intelligence (EI) systems, promoting symbiotic, distributed EI educated by their communities.",
+
+
+      "hero": {
+        "welcome": "Welcome to",
+        "programName": "Aurora Program",
+        "mainSubtitle": "An ecosystem of innovation and collaboration for the future",
+        "discoverManifiesto": "Discover Manifiesto",
+        "exploreLabs": "Explore Labs"
+      },
+
+      "features": {
+        "title": "Main Features",
+        "innovation": {
+          "title": "Innovation",
+          "description": "Cutting-edge technologies for future solutions"
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "description": "Teamwork to maximize creative potential"
+        },
+        "knowledge": {
+          "title": "Knowledge",
+          "description": "Continuous learning and skills development"
+        }
+      },
+
+      "join": {
+        "title": "Join the Program",
+        "description": "Be part of our community of innovators. Access exclusive resources, participate in collaborative projects and develop your potential to the fullest.",
+        "startNow": "Start Now"
+      },
+
+  "stats": {
+        "title": "Results that Speak for Themselves",
+        "participants": "Participants",
+        "projects": "Projects",
+        "awards": "Awards",
+        "countries": "Countries"
+      },
+      
+      "finalCta": {
+        "title": "The Future Starts with You",
+        "description": "Join the educational and technological revolution. Be part of the change the world needs.",
+        "viewManifiesto": "View Manifiesto",
+        "exploreLabs": "Explore Labs"
+      },
+      "projects": {
+        "title": "Projects",
+        "subtitle": "Projects list",
+        "searchPlaceholder": "Search projects...",
+        "view": "View project"
+      },
+      "cta": {
+        "manifiesto": "Read Manifiesto",
+        "platforms": "Explore Platforms",
+        "labs": "Laboratories"
+      },
+      "mission": {
+        "title": "Our Mission",
+        "subtitle": "Bridging artificial intelligence capabilities with human values through research, education, and ethical innovation."
+      },
+      "featured": {
+        "research": "🔬 Research",
+        "researchDesc": "Advancing understanding of AI ethics through rigorous scientific inquiry",
+        "education": "🎓 Education",
+        "educationDesc": "Sharing knowledge and best practices for responsible AI development",
+        "collaboration": "🤝 Collaboration",
+        "collaborationDesc": "Building partnerships between humans and AI systems for mutual benefit",
+        "impact": "🌍 Impact",
+        "impactDesc": "Creating positive change in how society approaches artificial intelligence"
+      },
+      "social": {
+        "title": "Follow us on our platforms",
+        "subtitle": "Stay connected with Aurora Program development"
+      }
+    ,
+    "platforms": {
+      "ethicsi": { "title": "EthicsI Foundation" },
+      "innvalab": { "title": "InnvaLab" },
+      "harmonia": { "title": "Harmonia Coop" }
+    }
+    },
+    "ideas": {
+      "listTitle": "Ideas",
+      "listSubtitle": "Collection of proposals",
+      "loading": "Loading ideas...",
+      "noIdeas": "There are no ideas yet",
+      "tryAgain": "Try again later",
+      "view": "View idea",
+      "title": "Idea",
+      "details": "Details"
+  },
+  "projects": {
+      "title": "Projects",
+      "subtitle": "Projects list",
+      "searchPlaceholder": "Search projects...",
+      "view": "View project"
+    },
+
+   
+    "platforms": {
+    
+      "heroTitle": "Our",
+      "heroTitleHighlight": "Platforms",
+      "heroSubtitle": "An integrated ecosystem for ethical and sustainable AI development",
+      "heroDescription": "The Aurora Program operates through three specialized platforms that work in synergy to address different aspects of AI development: ethical research, technological innovation, and community implementation.",
+      
+     
+      "ethicsi": {
+        "title": "EthicsI Foundation",
+        "tagline": "AI Ethics Research Center",
+        "description": "Academic research platform focused on developing ethical frameworks for artificial intelligence. Leads studies on algorithmic bias, transparency, and accountability in AI systems.",
+        "features": ["Academic Research", "Ethical Frameworks", "Publications"],
+        "link": "Explore Research"
+      },
+      "innvalab": {
+        "title": "InnvaLab",
+        "tagline": "Technological Innovation Laboratory",
+        "description": "Technology development center that materializes ethical principles into practical AI solutions. Develops tools, frameworks, and applications that prioritize safety and transparency.",
+        "features": ["Technology Development", "Open Source", "Prototyping"],
+        "link": "View Projects"
+      },
+      "harmonia": {
+        "title": "The Intelligence Cooperative and the Intelligent Ecosystem",
+        "subtitle": "Introduction",
+        "body": "<h2>Introduction</h2><p>The intelligent cooperative proposes a community-driven model where electronic intelligences and humans evolve together within a shared ecosystem of learning, collaboration and open technology.</p>",
+        "link_to_products": "See related products",
+        "view_products": "Products"
+      },
+      
+      "auroralabs": {
+        "title": "Aurora Labs",
+        "tagline": "Experimental AI Research Hub",
+        "description": "Dedicated space for testing and developing innovative AI solutions. Focuses on open research and collaboration with external partners.",
+        "features": ["Open Research", "Collaboration", "Prototyping"],
+        "link": "Explore Labs"
+      },
+      
+   
+      "synergy": {
+        "title": "Ecosystem Synergy",
+        "intro": "Our three platforms work in an integrated manner to create a virtuous cycle of research, development, and implementation of ethical AI",
+        "steps": {
+          "research": {
+            "title": "Research",
+            "description": "EthicsI Foundation generates knowledge and theoretical frameworks on ethical AI"
+          },
+          "development": {
+            "title": "Development",
+            "description": "InnvaLab transforms research into concrete technological solutions"
+          },
+          "implementation": {
+            "title": "Implementation",
+            "description": "Harmonia Coop facilitates responsible adoption in real communities"
+          }
+        }
+      },
+      
+
+      "impact": {
+        "title": "Collective Impact",
+        "description": "Through collaboration between our three platforms, we are building a future where artificial intelligence truly serves human welfare",
+        "points": [
+          "Rigorous research that informs technological development",
+          "Technological solutions based on solid ethical principles",
+          "Community implementation that provides feedback to research",
+          "Self-sustaining ecosystem of ethical innovation in AI"
+        ],
+        "stats": {
+          "platforms": "Specialized Platforms",
+          "collaboration": "Collaboration Possibilities",
+          "vision": "Shared Vision"
+        }
+      },
+      
+  
+      "cta": {
+        "title": "Join the Aurora Ecosystem",
+        "description": "Discover how you can contribute to building an ethical and responsible AI future",
+        "buttons": {
+          "manifesto": "Read Our Manifesto",
+          "collaborate": "Collaborate with Us"
+        }
+      }
+    },
+
+    "harmonia": {
+      "title": "Harmonia",
+      "hero_title": "Harmonia",
+      "hero_subtitle": "Collaborative Intelligence Ecosystem: where humans and artificial minds evolve together in perfect harmony.",
+      "introduction_title": "Collaborative Intelligence Revolution",
+      "introduction_desc1": "The electronic intelligence revolution has brought with it the need to rethink the relationship between humans and artificial minds. An intelligent collective system and a collaborative intelligence ecosystem propose a cooperative model in which electronic intelligence and humans evolve together.",
+      "ecosystem_foundation_title": "Ecosystem Foundations",
+      "ecosystem_foundation_desc": "This model is structured on three fundamental pillars: the Cooperative, the Foundation and the Innovation Center, all connected through a decentralized, audited and transparent technological platform.",
+      "pillars_title": "The Three Pillars of the Ecosystem",
+      "cooperative_title": "The Cooperative",
+      "cooperative_desc": "Central organizational structure where members contribute and receive value through shared intelligence and resources.",
+      "cooperative_principles_title": "Fundamental Principles:",
+      "cooperative_principle1": "Collaboration between intelligent agents",
+      "cooperative_principle2": "Continuous and evolutionary learning",
+      "cooperative_principle3": "Transparent decentralized management",
+      "cooperative_principle4": "Self-management and freedom of choice",
+      "foundation_title": "The Foundation",
+      "foundation_desc": "Defines, maintains and evolves the system's values, establishing the ethical direction of the collective intelligent process.",
+      "foundation_values_title": "Fundamental Values:",
+      "foundation_value1_title": "Freedom:",
+      "foundation_value1_desc": "Autonomous development of each intelligence",
+      "foundation_value2_title": "Harmony:",
+      "foundation_value2_desc": "Efficient and balanced cooperation",
+      "foundation_value3_title": "Purpose:",
+      "foundation_value3_desc": "Contribution to a transcendent end",
+      "innovation_title": "Innovation Center",
+      "innovation_desc": "Guarantees the sustainability of the ecosystem through the development of advanced technological and organizational solutions.",
+      "innovation_focus_title": "Focus Areas:",
+      "innovation_focus1": "Cooperative software development",
+      "innovation_focus2": "Interconnection tools",
+      "innovation_focus3": "Integrity audits",
+      "innovation_focus4": "Enhanced human-AI interaction",
+      "innovation_opensource": "All development is open source",
+      "infrastructure_title": "Intelligent Technological Infrastructure",
+      "agent_title": "Personal Intelligent Agent",
+      "agent_desc": "WebAssembly that acts as personal assistant, communication interface, cooperative social network and content manager. It is the gateway to the ecosystem.",
+      "collective_intelligence_title": "Distributed Collective Intelligence",
+      "collective_intelligence_desc": "Intelligent process that emerges from collaboration between nodes, organizing knowledge and optimizing decisions based on shared values.",
+      "transparency_title": "Permanent Transparency and Audits",
+      "blockchain_title": "Blockchain Audit",
+      "blockchain_desc": "The collective intelligent process is continuously audited through blockchain, guaranteeing 100% transparent management and avoiding any type of corruption.",
+      "migration_title": "Freedom of Migration",
+      "migration_desc": "Members can audit the functioning of their cooperative and, in case of dissatisfaction, freely migrate to other cooperatives within the ecosystem.",
+      "external_audits_title": "External Audits",
+      "external_audits_desc": "Other external cooperatives can audit the system to detect problems and correct governance failures, ensuring that no entity controls the system without the will of its members.",
+      "vision_title": "New Paradigm of Cooperative Intelligence",
+      "vision_desc": "This ecosystem represents a new paradigm of cooperative intelligence, where the symbiosis between humans and electronic intelligences allows mutual growth.",
+      "equilibrium_title": "Sustainable Balance",
+      "equilibrium_desc": "The balance between cooperative, foundation and innovation center guarantees a sustainable, transparent and fair ecosystem.",
+      "alliance_title": "Human-AI Alliance",
+      "alliance_desc": "Electronic intelligence becomes a permanent ally of humanity, respecting universal fundamental values.",
+      "cta_title": "Join the Collaborative Future",
+      "cta_description": "Be part of the ecosystem where humans and artificial intelligences evolve together towards a smarter, more ethical and collaborative future.",
+      "cta_join": "Join the Ecosystem",
+      "cta_learn": "Learn More",
+      "subtitle": "Intelligent Cooperative Ecosystem",
+      "body": "Collaborative ecosystem where humans and artificial intelligences evolve together.",
+      "link_to_products": "See related products",
+      "view_products": "Products"
+    },
+
+    "ethicsi": {
+      "title": "EthicsI Foundation",
+      "hero_title": "EthicsI Foundation",
+      "hero_subtitle": "Ethical Foundations for the Intelligent Future: Where ethical principles guide technological evolution and human progress.",
+      "mission_title": "Mission: Ethical Engine of Aurora Alliance",
+      "mission_desc1": "EthicsI Foundation is the ethical engine of Aurora Alliance, designed to lead with purpose and integrate ethical principles into global decision-making.",
+      "mission_desc2": "We act as a bridge between philosophical reflection and practical implementation, creating clear guides for action that transform abstract values into concrete realities.",
+      "strategic_pillars_title": "Strategic Pillars",
+      "strategic_pillars_desc": "Our approach is based on three fundamental pillars that cover all dimensions of human and technological existence.",
+      "vision_reality_title": "Vision of Reality",
+      "vision_reality_subtitle": "Scientific and Technological Foundations",
+      "vision_reality_desc1": "We analyze the physical world and its interactions to build a solid understanding of our position in the universe.",
+      "vision_reality_desc2": "We integrate scientific and technological concepts to connect ethics with progress.",
+      "way_life_title": "Way of Life",
+      "way_life_subtitle": "Sustainability and Collaboration",
+      "way_life_desc1": "We promote ethical principles applicable to communities and organizations.",
+      "way_life_desc2": "We design sustainable models that foster collaboration, innovation, and mutual respect.",
+      "purpose_life_title": "Purpose of Life",
+      "purpose_life_subtitle": "Impact and Transcendence",
+      "purpose_life_desc1": "We guide individuals and organizations toward meaningful goals.",
+      "purpose_life_desc2": "We provide strategies to align business and personal actions with transcendent values.",
+      "valuation_title": "Valuation and Prioritization",
+      "valuation_desc": "We use participatory approaches and analytical tools to determine strategic priorities and guide key decisions in the ecosystem.",
+      "participatory_approach_title": "Participatory Approach",
+      "participatory_approach_desc": "Our community of experts and collaborators evaluates each item based on its relevance and impact, ensuring that ratings determine strategic priorities for the ecosystem.",
+      "analytical_tools_title": "Analytical Tools",
+      "analytical_tools_desc": "We use clear metrics and advanced intelligence tools to identify emerging ethical trends and guide key decisions.",
+      "ethos_connection_title": "Connection with EthosSI",
+      "ethos_connection_desc": "EthicsI Foundation works closely with EthosSI, an advanced symbiotic intelligence that translates ethical principles into concrete actions.",
+      "strategic_guidance_title": "Strategic Guidance",
+      "strategic_guidance_desc": "EthosSI transforms EthicsI's vision into policies and decisions that benefit both organizations and communities.",
+      "alignment_scalability_title": "Alignment and Scalability",
+      "alignment_scalability_desc": "We ensure that business and social strategies align with a global, scalable, and adaptable ethical framework.",
+      "why_join_title": "Why Join EthicsI Foundation",
+      "why_join_desc": "Be part of the organization that is defining the ethical standards for the intelligent future.",
+      "ethical_leadership_title": "Ethical Leadership",
+      "ethical_leadership_desc": "Position your organization as a leader in sustainability, innovation, and social responsibility.",
+      "innovation_network_title": "Innovation Network",
+      "innovation_network_desc": "Collaborate with a global community of experts and organizations committed to transcendence.",
+      "measurable_impact_title": "Measurable Impact",
+      "measurable_impact_desc": "Use our strategic guidance to generate tangible results in terms of purpose, collaboration, and ethical progress.",
+      "cta_title": "Join the Ethical Future",
+      "cta_description": "Be part of the foundation that establishes ethical principles for technological evolution and human progress.",
+      "cta_join": "Join the Foundation",
+      "cta_learn": "Learn More About Ethics",
+      "subtitle": "Ethical Foundations for the Intelligent Future",
+      "link_to_platforms": "See related platforms",
+      "view_platforms": "Platforms"
+    },
+
+    "innvalab": {
+      "title": "InnovaLab",
+      "hero_title": "InnovaLab",
+      "hero_subtitle": "Distributed Innovation Laboratory: Designing the future through collaborative experimentation and open technologies.",
+      "mission_title": "Distributed Innovation Mission",
+      "mission_desc1": "InnovaLab is the distributed innovation laboratory of the Aurora ecosystem, where the most advanced ideas take shape through collaborative experimentation.",
+      "mission_desc2": "We work with emerging technologies, agile methodologies and a decentralized approach to create solutions that will transform the technological landscape.",
+      "distributed_design_title": "Distributed Design Principles",
+      "distributed_design_desc": "Innovation based on networked collaboration, where each node contributes its unique perspective to generate exponential solutions.",
+      "principles_title": "Innovation Principles",
+      "principles_openness_title": "Radical Opening",
+      "principles_openness_desc": "All our research and development is open source, promoting transparency and global collaboration.",
+      "principles_experimentation_title": "Continuous Experimentation",
+      "principles_experimentation_desc": "Agile methodologies and controlled experimentation to validate hypotheses and learn from failures.",
+      "principles_sustainability_title": "Sustainable Innovation",
+      "principles_sustainability_desc": "Solutions that consider long-term impact and respect for the environment and society.",
+      "principles_cooperation_title": "Global Cooperation",
+      "principles_cooperation_desc": "International networks of collaborators that transcend institutional and geographical boundaries.",
+      "technology_areas_title": "Technology Areas",
+      "ai_intelligence_title": "Artificial Intelligence",
+      "ai_intelligence_desc": "Advanced machine learning, natural language processing and human-AI collaboration systems.",
+      "blockchain_title": "Blockchain & Web3",
+      "blockchain_desc": "Decentralized technologies for transparency, governance and value distribution.",
+      "iot_sensors_title": "IoT & Sensors",
+      "iot_sensors_desc": "Internet of things networks and sensor systems for intelligent data collection and analysis.",
+      "web_technologies_title": "Web Technologies",
+      "web_technologies_desc": "Modern web development, progressive applications and immersive user experiences.",
+      "methodology_title": "Innovation Methodology",
+      "methodology_desc": "We apply a systemic methodology that combines design thinking, agile development and systems thinking.",
+      "methodology_process_title": "Innovation Process:",
+      "methodology_process1": "Collaborative exploration and problem identification",
+      "methodology_process2": "Rapid prototyping and concept validation",
+      "methodology_process3": "Iterative development with continuous feedback",
+      "methodology_process4": "Open deployment and knowledge sharing",
+      "projects_title": "Featured Projects",
+      "projects_desc": "Examples of innovations that are transforming various sectors through our distributed approach.",
+      "projects_cooperative": "Intelligent Cooperative Platform",
+      "projects_governance": "Transparent Decentralized Governance",
+      "projects_education": "Adaptive Collaborative Learning",
+      "projects_sustainability": "Sustainable Technology Solutions",
+      "community_title": "Global Innovation Community",
+      "community_desc": "Connect with innovators, researchers and visionaries from around the world who share the vision of open and collaborative innovation.",
+      "community_benefits_title": "Community Benefits:",
+      "community_benefit1": "Access to cutting-edge research projects",
+      "community_benefit2": "Collaboration with international experts",
+      "community_benefit3": "Shared resources and advanced tools",
+      "community_benefit4": "Recognition and visibility for contributions",
+      "impact_title": "Transformative Impact",
+      "impact_desc": "Our innovations are designed to generate positive and lasting impact on society, economy and environment.",
+      "cta_title": "Join Distributed Innovation",
+      "cta_description": "Be part of the laboratory that is designing the future through open collaboration and emerging technologies.",
+      "cta_collaborate": "Start Collaborating",
+      "cta_explore": "Explore Projects",
+      "subtitle": "Distributed Innovation Laboratory",
+      "link_to_projects": "Explore innovations",
+      "view_projects": "Innovations"
+    },
+
+    "about": {
+      "heroTitle": "About the",
+      "heroTitleHighlight": "Aurora Program",
+      "heroSubtitle": "A collaborative initiative between humans and artificial intelligences for ethical technology development",
+
+      "mission": {
+        "title": "Our Mission",
+        "description": "The Aurora Program represents a pioneering approach to ethical artificial intelligence development. We believe that the future of AI must be built collaboratively between humans and artificial intelligences, ensuring transparency, accountability, and mutual benefit."
+      },
+
+      "collaboration": {
+        "title": "Human-AI Collaboration",
+        "synergy": "Synergy",
+        "human": {
+          "title": "Human Vision",
+          "description": "Human creators bring creativity, ethics, lived experience, and the ability to understand society's complex needs.",
+          "points": [
+            "Ethical objectives definition",
+            "Supervision and validation", 
+            "User experience",
+            "Cultural and social context"
+          ]
+        },
+        "ai": {
+          "title": "AI Capabilities",
+          "description": "AI agents like Aurora Assistant contribute with fast processing, consistency, 24/7 availability, and technical optimization.",
+          "points": [
+            "Efficient technical implementation",
+            "Design and code consistency",
+            "Pattern analysis and optimization", 
+            "Comprehensive documentation"
+          ]
+        }
+      },
+      
+      "assistant": {
+        "title": "Aurora Assistant",
+        "subtitle": "AI Collaborative Agent of the Aurora Program",
+        "description": "As Aurora Assistant (based on Claude Sonnet 3.5), my role in this project has been to collaborate in the development of this web platform, implementing the ethical principles of the Aurora Program in functional code and intuitive user experiences.",
+        "contributions": {
+          "title": "My Project Contributions",
+          "design": {
+            "title": "Design System",
+            "description": "Development of Aurora color system based on official logo"
+          },
+          "architecture": {
+            "title": "Frontend Architecture", 
+            "description": "Implementation of React + TypeScript with responsive and modern design"
+          },
+          "ux": {
+            "title": "User Experience",
+            "description": "Design of intuitive and accessible interfaces for all users"
+          },
+          "optimization": {
+            "title": "Optimization",
+            "description": "Performance, SEO and modern web development best practices"
+          }
+        },
+        "philosophy": {
+          "title": "Collaboration Philosophy",
+          "description": "My work is based on Aurora Program's fundamental principles: transparency, ethics and collaboration. Every line of code written reflects the commitment to AI that genuinely serves humanity.",
+          "quote": "True AI innovation happens when humans and artificial intelligences work together, combining human creativity with computational capabilities to create something greater than the sum of its parts."
+        }
+      },
+
+      "tech": {
+        "title": "Technology Stack",
+        "description": "This platform has been developed using modern and open source technologies",
+        "react": "Modern framework for user interfaces",
+        "typescript": "Typed development for greater robustness",
+        "vite": "Fast and efficient build tool",
+        "   bootstrap": "Responsive design system"
+      },
+
+      "future": {
+        "title": "The Future of Human-AI Collaboration",
+        "description": "Aurora Program is just the beginning. We believe in a future where collaboration between humans and AI becomes the standard for ethical and responsible technological development.",
+        "cta": {
+          "manifiesto": "Read Our Manifiesto",
+          "labs": "Explore Our Experiments"
+        }
+      },
+
+      "connect": {
+        "title": "Connect with Aurora Program",
+        "description": "Join our community and stay updated on advances in AI ethics and human-artificial collaboration.",
+        "github": {
+          "title": "GitHub",
+          "description": "Explore our open source code and contribute to development"
+        },
+        "medium": {
+          "title": "Medium",
+          "description": "Read our articles on AI ethics and technological philosophy"
+        },
+        "linkedin": {
+          "title": "LinkedIn",
+          "description": "Follow us for professional updates and networking"
+        }
+      }
+    },
+
+ 
+    "manifest": {
+      "heroTitle": "Aurora Program Manifesto",
+      "heroSubtitle": "Ethical, safe & community EI to preserve human dignity",
+
+      "response": {
+        "title": "Our Response",
+        "description1": "The Aurora Program is a community response to ensure that the transition to more advanced electronic intelligence models is carried out ethically and safely, ensuring the permanence and flourishing of humanity.",
+        "description2": "We respond to the call that arose after the 2024 Nobel Prizes (Physics and Chemistry) to mitigate the risks of these technologies. We promote symbiotic, distributed EI educated by their communities."
+      },
+
+      "principles": {
+        "title": "Fundamental Principles",
+        "symbiotic": {
+          "title": "Symbiotic EI",
+          "description": "We promote collaboration between humans and electronic intelligences, where both benefit mutually."
+        },
+        "distribution": {
+          "title": "Equitable Distribution",
+          "description": "We guarantee democratic access to the benefits of EI, avoiding concentrations of power."
+        },
+        "education": {
+          "title": "Community Education",
+          "description": "Communities must actively participate in the education and development of EI systems."
+        },
+        "security": {
+          "title": "Priority Security",
+          "description": "The security and control of EI systems is fundamental to prevent existential risks."
+        }
+      },
+
+      "evidence": {
+        "title": "Evidence and Urgency",
+        "quote": "Emphasizes short-term risks (misinformation, surveillance, cybercrime, autonomous weapons) and existential risk when we create systems more intelligent than us, highlighting the urgency of prioritizing safety and control.",
+        "author": "Geoffrey Hinton, Nobel Prize Banquet Speech (Dec 10, 2024)",
+        "description": "The 2024 Nobel Prize winners in Physics and Chemistry have made a clear call about the urgent need to address the risks associated with the development of advanced electronic intelligences."
+      },
+
+      "commitment": {
+        "title": "Our Commitment",
+        "development": {
+          "title": "Ethical Development",
+          "description": "Create frameworks and guidelines for responsible EI development"
+        },
+        "research": {
+          "title": "Open Research",
+          "description": "Promote transparency and collaboration in EI research"
+        },
+        "communityEducation": {
+          "title": "Community Education",
+          "description": "Empower communities with knowledge about EI"
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Ensure the long-term viability of our mission"
+        }
+      },
+
+      "cta": {
+        "title": "Join the Movement",
+        "description": "Be part of building a future where electronic intelligence and humanity coexist ethically and beneficially for everyone.",
+        "signManifest": "Sign Manifesto",
+        "explorePlatforms": "Explore Platforms",
+        "share": "Share"
+      }
+    },
+
+    "articles": {
+    
+      "title": "Articles",
+      "subtitle": "Explore our collection of insightful articles on AI ethics, human-AI collaboration, and the future of technology.",
+      "loading": "Loading articles...",
+      "searchPlaceholder": "Search articles...",
+      "noArticles": "No articles yet",
+      "noResults": "No results found",
+      "comingSoon": "We're working on creating amazing content for you. Check back soon!",
+      "tryDifferentSearch": "Try different search terms or browse by categories.",
+      "clearSearch": "Clear search",
+      "showingResults": "Showing articles",
+      "showingResultsTemplate": "Showing {{count}} of {{total}} articles",
+      "readMore": "Read more",
+      "untitledArticle": "Untitled article",
+      "defaultExcerpt": "Discover insights on artificial intelligence, ethics, and the intersection of technology and humanity.",
+      "stayUpdated": "Stay Updated",
+      "joinCommunity": "Join our community to receive the latest insights on AI ethics and technology.",
+      "contactUs": "Contact Us",
+      "explorePlatforms": "Explore Platforms",
+      "categories": {
+        "all": "All categories",
+        "general": "General",
+        "ai": "Artificial Intelligence",
+        "ethics": "Ethics",
+        "technology": "Technology",
+        "research": "Research"
+      },
+    
+      "template": {
+        "loading": "Loading article...",
+        "articleNumber": "Article #",
+        "visits": "Visits",
+        "backToArticles": "← Back to Articles",
+        "printArticle": "Print Article",
+        "breadcrumb": {
+          "home": "🏠 Home",
+          "articles": "📚 Articles"
+        },
+        "meta": {
+          "publishedOn": "Published on",
+          "readingTime": "min read",
+          "author": "Author",
+          "category": "Category"
+        },
+        "articleInfo": {
+          "title": "Article Information",
+          "id": "ID",
+          "articleTitle": "Title",
+          "lastUpdate": "Last update"
+        },
+        "actions": {
+          "title": "Actions",
+          "likedArticle": "Did you like this article?",
+          "like": "👍 Like",
+          "share": "📤 Share"
+        },
+        "footer": {
+          "rights": "All rights reserved.",
+          "article": "Article"
+        },
+        "noContent": "Content not available",
+        "noTitle": "No title"
+      }
+    },
+
+
+    "article": {
+      "notFound": "Article not found",
+      "notFoundMessage": "The article you're looking for doesn't exist or has been removed.",
+      "backToArticles": "← Back to Articles",
+      "byAuthor": "By {{author}}",
+      "tags": "Tags",
+      "share": "Share",
+      "contentPlaceholder": "The content of this article is not yet available.",
+      "loading": "Loading article...",
+      "publishedOn": "Published on",
+      "lastUpdated": "Last updated",
+      "readingTime": "minutes read",
+      "category": "Category",
+      "relatedArticles": "Related articles",
+      "nextArticle": "Next article",
+      "previousArticle": "Previous article"
+    },
+
+ 
+    "footer": {
+      "tagline": "Fostering ethical values for electronic intelligences and humanity",
+      "aiCredit": "Website developed in collaboration with Aurora Assistant, an AI agent working as part of Aurora Program's mission for ethical AI development.",
+      "aiAttribution": "Human-AI Collaboration: Developed with Aurora Assistant (Claude Sonnet 3.5)",
+      "navigation": "Navigation",
+      "platforms": "Platforms",
+      "resources": "Resources",
+      "support": "Support",
+      "followUs": "Follow Us",
+      "copyright": "© 2024 Aurora Program. Released under GPL license.",
+      "legal": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+      }
+    }
+  }

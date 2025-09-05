@@ -1,0 +1,188 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Import Aurora Brand Variables */
+@import './aurora-brand.css';
+
+/* Global Styles Reset and Modern Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Aurora Brand Colors - Based on Logo */
+  --color-primary: #1e4a7a; /* Deep blue from logo text */
+  --color-primary-dark: #1e3a5f;
+  --color-primary-light: #2563eb;
+  --color-secondary: #c1cbd8;
+  --color-accent: #ffa500; /* Orange from logo sun */
+  
+  /* Aurora Sun Colors */
+  --aurora-sun-primary: #ff8c00;
+  --aurora-sun-light: #ffa500;
+  --aurora-sun-dark: #ff7700;
+  
+  /* Aurora Blue Colors */
+  --aurora-blue-primary: #1e4a7a;
+  --aurora-blue-light: #2563eb;
+  --aurora-blue-dark: #1e3a5f;
+  
+  /* Aurora Brand Gradients */
+  --aurora-gradient-start: #ff8c00; /* Orange start */
+  --aurora-gradient-mid: #ffa500; /* Orange middle */
+  --aurora-gradient-end: #87ceeb; /* Sky blue end */
+  --aurora-gradient-primary: linear-gradient(135deg, #ff8c00 0%, #ff6b6b 25%, #4ecdc4 50%, #45b7d1 100%);
+  --aurora-gradient-light: linear-gradient(135deg, rgba(255, 140, 0, 0.1) 0%, rgba(135, 206, 235, 0.1) 100%);
+  --aurora-gradient-bg: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  
+  /* Updated variables */
+  --aurora-bg-subtle: #f8f9fa;
+  --aurora-text-light: #64748b;
+  
+  /* Neutral Colors */
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  
+  /* Shadows - Aurora Enhanced */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Aurora specific shadows */
+  --aurora-shadow-sm: 0 2px 4px rgba(255, 140, 0, 0.1), 0 1px 2px rgba(30, 74, 122, 0.05);
+  --aurora-shadow-md: 0 4px 8px rgba(255, 140, 0, 0.15), 0 2px 4px rgba(30, 74, 122, 0.1);
+  --aurora-shadow-lg: 0 8px 16px rgba(255, 140, 0, 0.2), 0 4px 8px rgba(30, 74, 122, 0.15);
+  --aurora-shadow-xl: 0 16px 32px rgba(255, 140, 0, 0.25), 0 8px 16px rgba(30, 74, 122, 0.2);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--color-gray-800);
+  background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--aurora-bg-subtle) 100%);
+  min-height: 100vh;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-gray-900);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-gray-600);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Utilities */
+.gradient-text {
+  background: linear-gradient(135deg, var(--aurora-gradient-start), var(--aurora-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hover-lift {
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-300);
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-400);
+}

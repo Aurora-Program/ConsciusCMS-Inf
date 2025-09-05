@@ -1,0 +1,106 @@
+/* Modern Button Styles for Add Buttons */
+.modern-add-btn {
+  border-radius: 8px !important;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  border-width: 2px !important;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.modern-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.modern-add-btn:active {
+  transform: translateY(0);
+}
+
+.modern-add-btn i {
+  font-size: 1rem;
+}
+
+/* Variant-specific styles */
+.modern-add-btn.btn-outline-primary {
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  border-color: var(--bs-primary) !important;
+  color: var(--bs-primary) !important;
+}
+
+.modern-add-btn.btn-outline-primary:hover {
+  background: var(--bs-primary) !important;
+  color: white !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.modern-add-btn.btn-outline-success {
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  border-color: var(--bs-success) !important;
+  color: var(--bs-success) !important;
+}
+
+.modern-add-btn.btn-outline-success:hover {
+  background: var(--bs-success) !important;
+  color: white !important;
+  border-color: var(--bs-success) !important;
+}
+
+/* Action buttons (Add/Save) */
+.modern-action-btn {
+  border-radius: 8px !important;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  min-width: 140px;
+}
+
+.modern-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.modern-action-btn:active {
+  transform: translateY(0);
+}
+
+.modern-action-btn i {
+  font-size: 1.1rem;
+}
+
+/* Small size variant */
+.modern-add-btn.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.modern-add-btn.btn-sm i {
+  font-size: 0.9rem;
+}
+
+/* Disabled state */
+.modern-add-btn:disabled,
+.modern-action-btn:disabled {
+  opacity: 0.6;
+  transform: none !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modern-add-btn,
+  .modern-action-btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+  
+  .modern-action-btn {
+    min-width: 120px;
+  }
+}

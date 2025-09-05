@@ -1,0 +1,553 @@
+/* Aurora Modern Header - Professional & Responsive Design */
+
+.aurora-modern-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(30, 74, 122, 0.95);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24),
+    0 8px 32px rgba(30, 74, 122, 0.3);
+  transition: all 0.3s ease;
+}
+
+.aurora-modern-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    var(--aurora-gradient-start) 0%, 
+    var(--aurora-gold) 50%, 
+    var(--aurora-gradient-end) 100%);
+  z-index: 1;
+}
+
+.aurora-header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.aurora-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  gap: 2rem;
+}
+
+/* Brand Section */
+.aurora-brand-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.aurora-brand-section:hover {
+  transform: translateY(-1px);
+}
+
+.aurora-logo-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aurora-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.3));
+}
+
+.aurora-logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.aurora-brand-section:hover .aurora-logo-glow {
+  opacity: 1;
+  animation: pulse 2s infinite;
+}
+
+.aurora-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.aurora-brand-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.aurora-gradient-text {
+  background: linear-gradient(135deg, var(--aurora-gold), var(--aurora-light-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+}
+
+.aurora-brand-suffix {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.aurora-brand-tagline {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-weight: 400;
+  max-width: 200px;
+  line-height: 1.2;
+}
+
+/* Desktop Navigation */
+.aurora-desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.aurora-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aurora-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.aurora-nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.aurora-nav-link:hover::before {
+  left: 100%;
+}
+
+.aurora-nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.aurora-nav-link i {
+  font-size: 0.9rem;
+}
+
+.aurora-nav-highlight {
+  background: linear-gradient(135deg, var(--aurora-gold), var(--aurora-light-gold));
+  color: var(--aurora-primary-bg) !important;
+  font-weight: 600;
+}
+
+.aurora-nav-highlight:hover {
+  background: linear-gradient(135deg, var(--aurora-light-gold), var(--aurora-gold));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+/* Header Actions */
+.aurora-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.aurora-cta-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.aurora-cta-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 215, 0, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+}
+
+/* Mobile Menu Toggle */
+.aurora-mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.aurora-mobile-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.aurora-mobile-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.aurora-mobile-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.aurora-mobile-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Navigation */
+.aurora-mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(30, 74, 122, 0.98);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.aurora-mobile-nav.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.aurora-mobile-nav-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aurora-mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.aurora-mobile-nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 215, 0, 0.3);
+  color: white;
+}
+
+.aurora-mobile-nav-link i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Aurora Effects */
+.aurora-header-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.aurora-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--aurora-gold);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float-particle 15s infinite linear;
+}
+
+.aurora-particle:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.aurora-particle:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation-delay: -5s;
+}
+
+.aurora-particle:nth-child(3) {
+  top: 80%;
+  left: 30%;
+  animation-delay: -10s;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.4; }
+}
+
+@keyframes float-particle {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .aurora-desktop-nav {
+    display: none;
+  }
+  
+  .aurora-mobile-toggle {
+    display: flex;
+  }
+  
+  .aurora-mobile-nav {
+    display: block;
+  }
+  
+  .aurora-brand-tagline {
+    display: none;
+  }
+  
+  .aurora-header-content {
+    min-height: 70px;
+  }
+  
+  .aurora-brand-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aurora-header-container {
+    padding: 0 1rem;
+  }
+  
+  .aurora-header-content {
+    gap: 1rem;
+    min-height: 65px;
+  }
+  
+  .aurora-brand-section {
+    gap: 0.75rem;
+  }
+  
+  .aurora-logo-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .aurora-brand-title {
+    font-size: 1.3rem;
+  }
+  
+  .aurora-cta-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .aurora-cta-button span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .aurora-header-content {
+    min-height: 60px;
+  }
+  
+  .aurora-brand-title {
+    font-size: 1.2rem;
+  }
+  
+  .aurora-brand-suffix {
+    font-size: 0.8em;
+  }
+  
+  .aurora-header-actions {
+    gap: 0.5rem;
+  }
+}
+
+.logo-wrapper:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 248, 220, 0.3);
+}
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  /* Ya no necesita background blanco porque el logo tiene fondo transparente */
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+}
+
+.brand-text {
+  flex: 1;
+}
+
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-text {
+  /* Gradiente dorado que combina con el logo */
+  background: linear-gradient(135deg, #FFE4B5 0%, #F0E68C 50%, #DEB887 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.brand-suffix {
+  color: white;
+  margin-left: 0.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.brand-tagline {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0.5rem 0 0 0;
+  font-weight: 300;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Aurora Effect - Optimizado para complementar el logo de pirámide */
+.aurora-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 15% 30%, rgba(255, 228, 181, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 85% 70%, rgba(240, 230, 140, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 10%, rgba(255, 248, 220, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+  animation: aurora-glow 8s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-glow {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .brand-title {
+    font-size: 2rem;
+  }
+  
+  .brand-tagline {
+    font-size: 1rem;
+  }
+  
+  .logo-image {
+    width: 60px;
+    height: 60px;
+  }
+}

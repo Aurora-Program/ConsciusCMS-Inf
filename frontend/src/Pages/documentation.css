@@ -1,0 +1,433 @@
+/* Aurora Documentation Page - Diseño técnico y profesional */
+
+@import url('../aurora-design-system.css');
+@import url('../aurora-palette.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Main container */
+.aurora-documentation-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--aurora-bg-subtle) 100%);
+    font-family: var(--aurora-font-family);
+    color: var(--aurora-text-primary);
+}
+
+/* Hero Section - más compacto y enfocado */
+.aurora-docs-hero {
+background: var(--aurora-gradient-primary);
+    color: white;
+    padding: var(--aurora-spacing-xl) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.aurora-docs-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0);
+}
+
+.aurora-docs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: var(--aurora-spacing-sm);
+    margin-bottom: var(--aurora-spacing-md);
+    font-size: 0.875rem;
+    position: relative;
+    z-index: 2;
+}
+
+.aurora-breadcrumb-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.aurora-breadcrumb-link:hover {
+    color: white;
+    transform: translateX(2px);
+}
+
+.aurora-breadcrumb-current {
+    color: white;
+    font-weight: 500;
+}
+
+.aurora-docs-header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: var(--aurora-spacing-sm) 0;
+}
+
+.aurora-docs-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: var(--aurora-font-weight-bold);
+    line-height: 1.2;
+    margin: var(--aurora-spacing-sm) 0;
+    color: white;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(0, 0, 0, 0.3),
+        1px 1px 0 rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--aurora-spacing-sm);
+}
+
+.aurora-docs-subtitle {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Search and Controls */
+.aurora-docs-controls {
+    background: white;
+    padding: var(--aurora-spacing-lg) 0;
+    border-bottom: 1px solid var(--color-gray-200);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aurora-search-bar {
+    margin-bottom: var(--aurora-spacing-md);
+}
+
+.aurora-search-input-group {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.aurora-search-input-group i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-gray-400);
+    z-index: 1;
+}
+
+.aurora-search-input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 3rem;
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--aurora-border-radius-lg);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--color-gray-50);
+}
+
+.aurora-search-input:focus {
+    outline: none;
+    border-color: var(--aurora-primary);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.aurora-filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--aurora-spacing-xs);
+    flex-wrap: wrap;
+}
+
+.aurora-filter-tab {
+    padding: var(--aurora-spacing-xs) var(--aurora-spacing-md);
+    border: 2px solid var(--color-gray-200);
+    background: var(--color-gray-50);
+    border-radius: var(--aurora-border-radius);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.aurora-filter-tab:hover {
+    border-color: var(--aurora-primary);
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.aurora-filter-tab.active {
+    background: var(--aurora-primary);
+    border-color: var(--aurora-primary);
+    color: white;
+}
+
+/* Main Content */
+.aurora-docs-main {
+    padding: var(--aurora-spacing-xl) 0;
+}
+
+.aurora-docs-stats {
+    margin-bottom: var(--aurora-spacing-lg);
+    text-align: center;
+    color: var(--color-gray-600);
+    font-size: 0.875rem;
+}
+
+/* Documentation Grid */
+.aurora-docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--aurora-spacing-lg);
+    margin-bottom: var(--aurora-spacing-xl);
+}
+
+.aurora-doc-card {
+    background: white;
+    border-radius: var(--aurora-border-radius-lg);
+    padding: var(--aurora-spacing-lg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-gray-100);
+    position: relative;
+    overflow: hidden;
+}
+
+.aurora-doc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--aurora-primary);
+}
+
+.aurora-doc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--aurora-spacing-md);
+}
+
+.aurora-doc-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: var(--aurora-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--aurora-primary);
+    font-size: 1.25rem;
+}
+
+.aurora-doc-badge {
+    background: var(--aurora-secondary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--aurora-border-radius);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.aurora-doc-content {
+    margin-bottom: var(--aurora-spacing-lg);
+}
+
+.aurora-doc-title {
+    font-size: 1.25rem;
+    font-weight: var(--aurora-font-weight-bold);
+    color: var(--aurora-text-primary);
+    margin: 0 0 var(--aurora-spacing-sm) 0;
+    line-height: 1.3;
+}
+
+.aurora-doc-description {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.aurora-doc-footer {
+    border-top: 1px solid var(--color-gray-100);
+    padding-top: var(--aurora-spacing-md);
+    background: var(--aurora-gold-main);
+    padding: 0.6rem;
+}
+
+.aurora-doc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--aurora-spacing-xs);
+    color: var(--aurora-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.aurora-doc-link:hover {
+    color: var(--aurora-primary-dark);
+    gap: var(--aurora-spacing-sm);
+}
+
+.aurora-doc-link i {
+    transition: transform 0.3s ease;
+}
+
+.aurora-doc-link:hover i {
+    transform: translateX(2px);
+}
+
+/* Empty State */
+.aurora-empty-state {
+    text-align: center;
+    padding: var(--aurora-spacing-xl) 0;
+    color: var(--color-gray-600);
+}
+
+.aurora-empty-icon {
+    font-size: 4rem;
+    color: var(--color-gray-300);
+    margin-bottom: var(--aurora-spacing-lg);
+}
+
+.aurora-empty-state h3 {
+    color: var(--aurora-text-primary);
+    margin-bottom: var(--aurora-spacing-sm);
+}
+
+/* Quick Links Section */
+.aurora-docs-quick-links {
+    background: var(--color-gray-50);
+    padding: var(--aurora-spacing-xl) 0;
+    border-top: 1px solid var(--color-gray-200);
+}
+
+.aurora-docs-quick-links h2 {
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: var(--aurora-spacing-lg);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.aurora-quick-links-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--aurora-spacing-lg);
+    flex-wrap: wrap;
+}
+
+.aurora-quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--aurora-spacing-xs);
+    padding: var(--aurora-spacing-lg);
+    background: white;
+    border-radius: var(--aurora-border-radius-lg);
+    text-decoration: none;
+    color: #4a5568;
+    transition: all 0.3s ease;
+    border: 2px solid #e2e8f0;
+    min-width: 120px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.aurora-quick-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #667eea;
+    color: #2d3748;
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.aurora-quick-link:visited {
+    color: #4a5568;
+}
+
+.aurora-quick-link:visited:hover {
+    color: #2d3748;
+}
+
+.aurora-quick-link i {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: var(--aurora-spacing-xs);
+    transition: all 0.3s ease;
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+    font-weight: 900;
+    display: block;
+    line-height: 1;
+}
+
+.aurora-quick-link:hover i {
+    color: #4c63d2;
+    transform: scale(1.1);
+}
+
+/* Específico para iconos de GitHub */
+.aurora-quick-link .fa-github {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400;
+    color: #667eea;
+}
+
+.aurora-quick-link:hover .fa-github {
+    color: #4c63d2;
+}
+
+/* Asegurar que los iconos se muestren correctamente */
+.aurora-quick-link i:before {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.aurora-quick-link span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568;
+    transition: color 0.3s ease;
+}
+
+.aurora-quick-link:hover span {
+    color: #2d3748;
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aurora-docs-hero {
+        padding: var(--aurora-spacing-md) 0;
+        min-height: 160px;
+    }
+
+    .aurora-docs-title {
+        font-size: 1.75rem;
+        flex-direction: column;
+        gap: var(--aurora-spacing-xs);
+    }
+
+    .aurora-docs-grid {
+        grid-template-columns: 1fr;
+        gap: var(--aurora-spacing-md);
+    }
+
+    .aurora-filter-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: var(--aurora-spacing-xs);
+    }
+
+    .aurora-quick-links-grid {
+        gap: var(--aurora-spacing-md);
+    }
+
+    .aurora-container {
+        padding: 0 var(--aurora-spacing-sm);
+    }
+}

@@ -1,0 +1,9 @@
+/* aurora-theme-dark.css - overrides only variables for dark mode */
+:root {
+  --aurora-bg: #0b1020;
+  --aurora-surface: #0f1724;
+  --aurora-text: #e6eef8;
+  --aurora-muted: #94a3b8;
+  --aurora-primary: #4f7bd4;
+  --aurora-primary-600: #2653d1;
+}

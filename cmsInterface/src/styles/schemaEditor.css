@@ -1,0 +1,348 @@
+/* ==========================================================================
+   SCHEMA & EDITOR SPECIFIC STYLES
+   ========================================================================== */
+
+/* Schema Builder Specific */
+.schema-field-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+  transition: all var(--transition-fast);
+}
+
+.schema-field-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(30, 87, 153, 0.1);
+}
+
+.schema-field-item.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.schema-field-type {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--color-gray-100);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.schema-component-tree {
+  border-left: 2px solid var(--border-light);
+  margin-left: var(--space-md);
+  padding-left: var(--space-md);
+}
+
+.schema-component-tree .aurora-card {
+  margin-bottom: var(--space-sm);
+}
+
+/* Editor Specific */
+.editor-field-container {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  background: var(--bg-surface);
+  transition: all var(--transition-fast);
+}
+
+.editor-field-container:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(30, 87, 153, 0.1);
+}
+
+.editor-field-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.editor-field-required {
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+}
+
+.editor-field-description {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+  font-style: italic;
+}
+
+.editor-preview-container {
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  background: var(--bg-main);
+  min-height: 300px;
+  position: relative;
+}
+
+.editor-preview-container::before {
+  content: "Vista Previa";
+  position: absolute;
+  top: -10px;
+  left: var(--space-md);
+  background: var(--bg-surface);
+  padding: 0 var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Page List Styles */
+.page-list-item {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-xs);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  background: var(--bg-surface);
+}
+
+.page-list-item:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  transform: translateX(4px);
+}
+
+.page-list-item.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  box-shadow: 0 2px 8px rgba(30, 87, 153, 0.15);
+}
+
+.page-list-item .page-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.page-list-item .page-template {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Toolbar Enhancements */
+.aurora-toolbar .search-container {
+  position: relative;
+  max-width: 300px;
+  flex: 1;
+}
+
+.aurora-toolbar .search-container .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.aurora-toolbar .search-container input {
+  padding-left: 40px;
+}
+
+/* Order Controls */
+.order-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.order-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  background: var(--bg-surface);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.order-btn:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: scale(1.1);
+}
+
+.order-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Modal Enhancements */
+.aurora-modal .modal-content {
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.aurora-modal .modal-header {
+  background: var(--gradient-aurora-subtle);
+  border-bottom: 1px solid var(--border-light);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.aurora-modal .modal-title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.aurora-modal .modal-body {
+  padding: var(--space-xl);
+}
+
+.aurora-modal .modal-footer {
+  border-top: 1px solid var(--border-light);
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--bg-muted);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* React Quill Customization */
+.ql-container {
+  border-radius: 0 0 var(--radius-md) var(--radius-md) !important;
+  border-color: var(--border-light) !important;
+}
+
+.ql-toolbar {
+  border-radius: var(--radius-md) var(--radius-md) 0 0 !important;
+  border-color: var(--border-light) !important;
+  background: var(--bg-muted);
+}
+
+/* Component Type Indicators */
+.component-type-text { background: #e3f2fd; color: #1565c0; }
+.component-type-textarea { background: #f3e5f5; color: #7b1fa2; }
+.component-type-number { background: #e8f5e8; color: #2e7d32; }
+.component-type-email { background: #fff3e0; color: #ef6c00; }
+.component-type-file { background: #fce4ec; color: #c2185b; }
+.component-type-listComponents { background: #f1f8e9; color: #558b2f; }
+
+.component-type-indicator {
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Success States */
+.success-message {
+  background: var(--color-success-light);
+  border: 1px solid var(--color-success);
+  color: var(--color-success-dark);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.success-message svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+/* Loading States */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  z-index: 10;
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-gray-200);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .aurora-grid--sidebar-left {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  
+  .page-list-item {
+    padding: var(--space-sm);
+  }
+  
+  .editor-field-container {
+    padding: var(--space-md);
+  }
+  
+  .aurora-toolbar {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  
+  .aurora-toolbar-left,
+  .aurora-toolbar-center,
+  .aurora-toolbar-right {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .schema-field-item {
+    background: var(--bg-surface-dark);
+    border-color: var(--border-dark);
+  }
+  
+  .editor-field-container {
+    background: var(--bg-surface-dark);
+    border-color: var(--border-dark);
+  }
+  
+  .page-list-item {
+    background: var(--bg-surface-dark);
+    border-color: var(--border-dark);
+  }
+  
+  .component-type-text { background: #1e3a8a; color: #93c5fd; }
+  .component-type-textarea { background:  var }
+  .component-type-number { background: #14532d; color: #86efac; }
+  .component-type-email { background: #9a3412; color: #fed7aa; }
+  .component-type-file { background: #9d174d; color: #fbb6ce; }
+  .component-type-listComponents { background: #365314; color: #bef264; }
+}

@@ -1,0 +1,16 @@
+/* aurora-base.css - reset and base styles */
+* { box-sizing: border-box; }
+html { font-family: var(--aurora-font-sans); font-size: var(--aurora-font-base); line-height: var(--aurora-line-height); }
+body { margin: 0; background: var(--aurora-bg); color: var(--aurora-text); -webkit-font-smoothing:antialiased; }
+
+.aurora-container { max-width: var(--aurora-max-width); margin: 0 auto; padding: 0 var(--aurora-space-md); }
+
+/* Headings */
+.h1, h1 { font-size: 2rem; margin: 0 0 var(--aurora-space-md) 0; color: var(--aurora-text); }
+.h2, h2 { font-size: 1.5rem; margin: 0 0 var(--aurora-space-sm) 0; color: var(--aurora-text); }
+
+/* Accessible focus outline */
+:focus { outline: 3px solid rgba(37,99,235,0.18); outline-offset: 2px; }
+
+/* Minimal utility for images */
+img { max-width: 100%; height: auto; display: block; }

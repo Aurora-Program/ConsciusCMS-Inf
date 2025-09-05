@@ -1,0 +1,263 @@
+/* Aurora Program - Standardized Color Palette */
+/* Based on the beautiful footer color scheme */
+
+/* Extended Aurora Brand Variables for Global Consistency */
+:root {
+  /* Footer-Inspired Global Color Scheme */
+  --aurora-primary-bg: linear-gradient(135deg, #1e4a7a 0%, #2563eb 50%, #1e3a5f 100%);
+  --aurora-secondary-bg: linear-gradient(135deg, #2563eb 0%, #1e4a7a 50%, #1e3a5f 100%);
+  --aurora-accent-bg: linear-gradient(90deg, #ff8c00, #ffa500, #ff8c00);
+  
+  /* Text Colors on Dark Backgrounds */
+  --aurora-text-primary: rgba(255, 255, 255, 0.9);
+  --aurora-text-secondary: rgba(255, 255, 255, 0.8);
+  --aurora-text-tertiary: rgba(255, 255, 255, 0.7);
+  --aurora-text-muted: rgba(255, 255, 255, 0.6);
+  
+  /* Text Colors on Light Backgrounds */
+  --aurora-text-dark-primary: #2d3748;
+  --aurora-text-dark-secondary: #4a5568;
+  --aurora-text-dark-tertiary: #718096;
+  --aurora-text-dark-muted: #a0aec0;
+  
+  /* Orange Gradient Text (for headings and accents) */
+  --aurora-text-gradient-orange: linear-gradient(45deg, #ff8c00, #ffa500);
+  --aurora-text-gradient-blue: linear-gradient(45deg, #1e4a7a, #2563eb);
+  
+  /* Interactive States */
+  --aurora-hover-orange: #ff8c00;
+  --aurora-hover-bg: rgba(255, 140, 0, 0.1);
+  --aurora-active-bg: rgba(255, 140, 0, 0.2);
+  
+  /* Glass Effects with Aurora Colors */
+  --aurora-glass-light: rgba(255, 255, 255, 0.1);
+  --aurora-glass-medium: rgba(255, 255, 255, 0.15);
+  --aurora-glass-strong: rgba(255, 255, 255, 0.25);
+  --aurora-glass-border: rgba(255, 255, 255, 0.2);
+  
+  /* Card and Section Backgrounds */
+  --aurora-card-bg: rgba(255, 255, 255, 0.95);
+  --aurora-card-shadow: 0 8px 32px rgba(30, 74, 122, 0.15);
+  --aurora-card-border: rgba(255, 140, 0, 0.1);
+  
+  /* Consistent Spacing */
+  --aurora-section-padding: 4rem 0;
+  --aurora-container-padding: 0 2rem;
+  --aurora-gap-small: 1rem;
+  --aurora-gap-medium: 2rem;
+  --aurora-gap-large: 3rem;
+  
+  /* Border Radius Standards */
+  --aurora-radius-sm: 8px;
+  --aurora-radius-md: 12px;
+  --aurora-radius-lg: 16px;
+  --aurora-radius-xl: 24px;
+}
+
+/* Global Aurora Classes for Consistent Styling */
+
+/* Background Classes */
+.aurora-bg-primary {
+  background: var(--aurora-primary-bg);
+  color: var(--aurora-text-primary);
+}
+
+.aurora-bg-secondary {
+  background: var(--aurora-secondary-bg);
+  color: var(--aurora-text-primary);
+}
+
+.aurora-bg-glass {
+  background: var(--aurora-glass-medium);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--aurora-glass-border);
+}
+
+/* Text Classes */
+.aurora-text-gradient {
+  background: var(--aurora-text-gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.aurora-text-gradient-blue {
+  background: var(--aurora-text-gradient-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.aurora-text-light {
+  color: var(--aurora-text-primary);
+}
+
+.aurora-text-muted {
+  color: var(--aurora-text-muted);
+}
+
+/* Button Classes */
+.aurora-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--aurora-glass-medium);
+  color: var(--aurora-text-primary);
+  text-decoration: none;
+  border-radius: var(--aurora-radius-lg);
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--aurora-glass-border);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.aurora-btn:hover {
+  background: var(--aurora-glass-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: var(--aurora-text-primary);
+}
+
+.aurora-btn-primary {
+  background: var(--aurora-orange);
+  color: white;
+  border-color: var(--aurora-orange);
+}
+
+.aurora-btn-primary:hover {
+  background: var(--aurora-orange-light);
+  color: white;
+}
+
+/* Card Classes */
+.aurora-card {
+  background: var(--aurora-card-bg);
+  border-radius: var(--aurora-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--aurora-card-shadow);
+  border: 1px solid var(--aurora-card-border);
+  transition: all 0.3s ease;
+}
+
+.aurora-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(30, 74, 122, 0.25);
+}
+
+.aurora-card-dark {
+  background: rgba(30, 74, 122, 0.9);
+  color: var(--aurora-text-primary);
+  backdrop-filter: blur(10px);
+}
+
+/* Section Classes */
+.aurora-section {
+  padding: var(--aurora-section-padding);
+}
+
+.aurora-section-hero {
+  background: var(--aurora-primary-bg);
+  color: var(--aurora-text-primary);
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.aurora-section-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--aurora-accent-bg);
+}
+
+/* Container Class */
+.aurora-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--aurora-container-padding);
+}
+
+/* Heading Classes */
+.aurora-heading-1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.aurora-heading-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.aurora-heading-3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.aurora-heading-4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Link Classes */
+.aurora-link {
+  color: var(--aurora-text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aurora-link:hover {
+  color: var(--aurora-hover-orange);
+  transform: translateX(5px);
+}
+
+/* Utility Classes */
+.aurora-mb-1 { margin-bottom: var(--aurora-gap-small); }
+.aurora-mb-2 { margin-bottom: var(--aurora-gap-medium); }
+.aurora-mb-3 { margin-bottom: var(--aurora-gap-large); }
+
+.aurora-mt-1 { margin-top: var(--aurora-gap-small); }
+.aurora-mt-2 { margin-top: var(--aurora-gap-medium); }
+.aurora-mt-3 { margin-top: var(--aurora-gap-large); }
+
+.aurora-p-1 { padding: var(--aurora-gap-small); }
+.aurora-p-2 { padding: var(--aurora-gap-medium); }
+.aurora-p-3 { padding: var(--aurora-gap-large); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aurora-heading-1 {
+    font-size: 2.5rem;
+  }
+  
+  .aurora-heading-2 {
+    font-size: 2rem;
+  }
+  
+  .aurora-section-hero {
+    padding: 4rem 0;
+  }
+  
+  .aurora-container {
+    padding: 0 1rem;
+  }
+}

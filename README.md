@@ -3,7 +3,7 @@
 
 ## 📋 Descripción
 
-**ConciusCMS** es un sistema de gestión de contenidos (CMS) serverless construido completamente en AWS usando infraestructura como código (IaC). Proporciona una solución escalable, segura y moderna para la gestión de contenido web con capacidades headless.
+**ConciusCMS** es un sistema de gestión de contenidos (CMS) serverless construido completamente en AWS usando infraestructura como código (IaC). Proporciona una solución escalable, segura y moderna para la gestión de contenido web con capacidades headless. Ademas el sistema tiene mecanismo para favorecer el la calidad de contenido en intennet a largo plazo
 
 ## 🏗️ Arquitectura
 
