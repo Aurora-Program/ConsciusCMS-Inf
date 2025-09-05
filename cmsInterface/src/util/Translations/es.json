@@ -145,7 +145,7 @@
   ,
   "projects": {
     "title": "Proyectos",
-    "subtitle": "ConscioCMS Ethics Guardrail",
+    "subtitle": "consciusCMS Ethics Guardrail",
     "searchPlaceholder": "Buscar proyectos...",
     "view": "Ver"
   },
@@ -220,7 +220,7 @@
     "termsSection1": "Para el uso de este servicio es necesario el registro por parte del usuario, con ingreso de datos personales fidedignos y definición de una contraseña. El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento. El provedor del servicio no asume la responsabilidad en caso de que el titular de la pagina web entregue dicha clave a terceros.",
     "termsSection2": "Todas las transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la validación de la forma de pago, validación de la factura (en caso de existir) y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico. Los precios de los servicios ofrecidos en esta web son válidos solamente en las suscripciones realizadas en este sitio web.",
     "termsSection3Heading": "LICENCIA CONTRATADA",
-    "termsSection3": "2024@ConscioCMS web design content management es un servicio de alojamiento y manejo de contenido para páginas web. Este servicio solo podrá ser utilizado con este fin y con las limitaciones que se describen en esta licencia.",
+    "termsSection3": "2024@consciusCMS web design content management es un servicio de alojamiento y manejo de contenido para páginas web. Este servicio solo podrá ser utilizado con este fin y con las limitaciones que se describen en esta licencia.",
     "termsIntroRestrictions": "Usted ha contratado una licencia Basic de contenido con las siguientes restricciones:",
     "termsList1": "El contenido máximo de almacenamiento por esta licencia son 300 MB por la cantidad total de contenido.",
     "termsList2": "El máximo de visitas para este nivel de licencia será de 1000 visitas al mes.",

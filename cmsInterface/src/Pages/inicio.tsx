@@ -517,11 +517,11 @@ const touch = (event: ReactTouchEvent<HTMLDivElement>) => {
 <>
 <Helmet>
                 <meta charSet="utf-8" />
-                <title>ConscioCMS Website</title>
+                <title>consciusCMS Website</title>
                 <link rel="canonical" href="https://d2vp9tpwoisslx.cloudfront.net/" />
 
                 <meta property="og:title" content="Jorid Baron" />
-                <meta property="og:description" content="ConscioCMS website, Fotografo de barcelona" />
+                <meta property="og:description" content="consciusCMS website, Fotografo de barcelona" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://d2vp9tpwoisslx.cloudfront.net" />
                 <meta property="og:image" content="https://pma-demo1-content-paris.s3.eu-west-3.amazonaws.com/logo.png" />
@@ -545,11 +545,11 @@ const touch = (event: ReactTouchEvent<HTMLDivElement>) => {
 
 <Helmet>
                 <meta charSet="utf-8" />
-                <title>ConscioCMS Website</title>
+                <title>consciusCMS Website</title>
                 <link rel="canonical" href="https://d2vp9tpwoisslx.cloudfront.net/" />
 
                 <meta property="og:title" content="Jorid Baron" />
-                <meta property="og:description" content="ConscioCMS website, Fotografo de barcelona" />
+                <meta property="og:description" content="consciusCMS website, Fotografo de barcelona" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://d2vp9tpwoisslx.cloudfront.net" />
                 <meta property="og:image" content="https://pma-demo1-content-paris.s3.eu-west-3.amazonaws.com/logo.png" />

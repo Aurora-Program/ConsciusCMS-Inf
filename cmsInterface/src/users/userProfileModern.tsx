@@ -290,7 +290,7 @@ function UserProfile(){
                             </p>
                             
                             <div className="qr-code-container">
-                                <QRCodeSVG value={`otpauth://totp/ConscioCMS:${email}?secret=${secretCode}&issuer=ConscioCMS`} />
+                                <QRCodeSVG value={`otpauth://totp/consciusCMS:${email}?secret=${secretCode}&issuer=consciusCMS`} />
                             </div>
 
                             <div className="form-group">

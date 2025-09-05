@@ -272,7 +272,7 @@ return(
    
       <div style={{margin:"20px auto 20px auto", width:"100%", display:"flex", flexDirection:"column"}} >
         <div style={{margin:"auto"}}>
-            <QRCodeSVG value={"otpauth://totp/ConscioCMS:" + email +"?secret=" + secretCode +"&issuer=ConscioCMS"} />
+            <QRCodeSVG value={"otpauth://totp/consciusCMS:" + email +"?secret=" + secretCode +"&issuer=consciusCMS"} />
             </div>
     
 

@@ -143,7 +143,7 @@
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "ConscioCMS Ethics Guardrail",
+    "subtitle": "consciusCMS Ethics Guardrail",
     "searchPlaceholder": "Rechercher des projets...",
     "view": "Voir"
   },
@@ -216,7 +216,7 @@
     "termsSection1": "Pour utiliser ce service, l’enregistrement de l’utilisateur est nécessaire, avec l’entrée de données personnelles véridiques et la définition d’un mot de passe. L’utilisateur peut choisir et changer son mot de passe pour accéder à l’administration du compte à tout moment. Le fournisseur de services n’assume aucune responsabilité si le propriétaire du site web transmet ce mot de passe à des tiers.",
     "termsSection2": "Toutes les transactions effectuées via ce site web sont soumises à un processus de confirmation et de vérification, qui peut inclure la validation du mode de paiement, la validation de la facture (le cas échéant) et le respect des conditions requises par le mode de paiement sélectionné. Dans certains cas, une vérification par e-mail peut être requise. Les prix des services offerts sur ce site web sont valides uniquement pour les abonnements effectués sur ce site web.",
     "termsSection3Heading": "LICENCE CONCLUE",
-    "termsSection3": "2024@ConscioCMS web design content management est un service d’hébergement et de gestion de contenu pour sites web. Ce service ne peut être utilisé qu’à cette fin et avec les limitations décrites dans cette licence.",
+    "termsSection3": "2024@consciusCMS web design content management est un service d’hébergement et de gestion de contenu pour sites web. Ce service ne peut être utilisé qu’à cette fin et avec les limitations décrites dans cette licence.",
     "termsIntroRestrictions": "Vous avez souscrit une licence Basic de contenu avec les restrictions suivantes :",
     "termsList1": "La capacité maximale de stockage pour cette licence est de 300 Mo pour le contenu total.",
     "termsList2": "Le maximum de visites pour ce niveau de licence sera de 1000 visites par mois.",

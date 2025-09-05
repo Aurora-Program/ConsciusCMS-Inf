@@ -105,7 +105,7 @@ seleccionada al momento de crear su cuenta.
 LICENCIA CONTRATADA:
 </h5>
 <p>
-2024@ConscioCMS web desing contementat management es un servicio de alojamiento y manojod de contenido para paginas web
+2024@consciusCMS web desing contementat management es un servicio de alojamiento y manojod de contenido para paginas web
 Este servicio solo podrá ser utilizo con este fin y con las limitaciones que se describen ene esta licencia.
 </p>
 <p>
