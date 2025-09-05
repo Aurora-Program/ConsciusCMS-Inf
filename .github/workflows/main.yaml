@@ -39,7 +39,14 @@ jobs:
         run: |
           # cmsInterface vite.config.ts outputs to ./dist/admin per repo config
           if [ -d "cmsInterface/dist/admin" ]; then
+            # Sync into the /admin prefix (mirror exactly)
             aws s3 sync cmsInterface/dist/admin s3://${{ vars.CODECM_BUCKET }}/admin --delete
+            # Also copy the same files to the bucket root (do not --delete at root to avoid removing other content)
+            aws s3 sync cmsInterface/dist/admin s3://${{ vars.CODECM_BUCKET }}
+              # Ensure index.html is present in the /admin prefix
+              if [ -f "cmsInterface/dist/admin/index.html" ]; then
+                aws s3 cp cmsInterface/dist/admin/index.html s3://${{ vars.CODECM_BUCKET }}/admin/index.html
+              fi
           else
             echo "No cmsInterface/dist/admin folder found, skipping CMS sync."
           fi
